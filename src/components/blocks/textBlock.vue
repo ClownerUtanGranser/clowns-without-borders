@@ -1,15 +1,32 @@
 <template>
   <div class="textBlock">
-    <h1 v-text="$props.copy.heading" />
-    <p v-html="$props.copy.body" />
+    <Block>
+      <div class="textBlock__wrapper">
+        <h1
+          v-if="$props.copy.heading"
+          class="textBlock__heading" 
+          v-text="$props.copy.heading"
+        />
+        <p
+          v-if="$props.copy.body"
+          class="textBlock__body"
+          v-html="$props.copy.body"
+        />
+      </div>
+    </Block>
   </div>
 </template>
 
 <script>
+import Block from '@/components/ui/block'
+
 export default {
   name: 'TextBlock',
   props: {
     copy: Object
+  },
+  components: {
+    Block
   }
 }
 </script>
@@ -20,8 +37,18 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
   width: 100%;
-  background-color: color(yellow);
+  background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
+  text-align: center;
+
+  &__body {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  &__wrapper {
+    max-width: 740px;
+    padding: 165px 0;
+  }
 }
 </style>

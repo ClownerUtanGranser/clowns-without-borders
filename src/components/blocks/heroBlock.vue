@@ -1,6 +1,5 @@
 <template>
   <div class="hero">
-    <img src="@/assets/images/hero.jpg" class="hero__img" />
     <div class="hero__wrapper">
       <h1 v-text="$props.copy.heading" />
       <p v-text="$props.copy.body" />
