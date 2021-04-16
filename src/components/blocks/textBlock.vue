@@ -2,7 +2,7 @@
   <div class="textBlock">
     <Block>
       <div class="textBlock__wrapper">
-        <h1
+        <p
           v-if="$props.copy.heading"
           class="textBlock__heading"
           v-text="$props.copy.heading"
@@ -38,16 +38,35 @@ export default {
   width: 100%;
   background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
 
+  &__heading,
   &__body {
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 29px;
     font-family: 'DM Sans';
     text-align: center;
+
+    @include mq($from: tablet) {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    @include mq($from: tablet) {
+      margin-bottom: 45px;
+    }
   }
 
   &__wrapper {
     max-width: 740px;
-    padding: 165px 0;
+    padding: 60px 0;
+
+    @include mq($from: tablet) {
+      padding: 165px 0;
+    }
   }
 }
 </style>

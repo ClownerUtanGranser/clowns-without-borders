@@ -12,6 +12,10 @@ export default {
 
 <style lang="scss">
 .block {
-  padding: 0 145px;
+  padding: 0 30px;
+
+  @include mq($from: tablet) {
+    padding: 0 145px;
+  }
 }
 </style>

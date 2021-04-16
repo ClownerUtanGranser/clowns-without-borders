@@ -1,17 +1,17 @@
 <template>
   <div class="landing">
-    <TextBlock :copy="copy.textSix" />
+    <ImageTextBlock :copy="copy.imageTextOne" />
   </div>
 </template>
 
 <script>
 import copy from '../../data/copy.json'
-import TextBlock from '@/components/blocks/textBlock'
+import ImageTextBlock from '@/components/blocks/imageTextBlock'
 
 export default {
   name: 'Landing',
   components: {
-    TextBlock
+    ImageTextBlock
   },
   data () {
     return {
