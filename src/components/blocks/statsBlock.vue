@@ -1,12 +1,16 @@
 <template>
   <div class="statsBlock">
-    <p>Stats Block</p>
+    <h1 v-text="$props.copy.heading" />
+    <p v-html="$props.copy.body" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'StatsBlock'
+  name: 'StatsBlock',
+  props: {
+    copy: Object
+  }
 }
 </script>
 
@@ -15,8 +19,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: color(light-purple);
 }
 </style>

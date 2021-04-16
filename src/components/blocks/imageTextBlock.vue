@@ -1,12 +1,16 @@
 <template>
   <div class="imageText">
-    <p>Image Text Block</p>
+    <h1 v-text="$props.copy.heading" />
+    <p v-text="$props.copy.body" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TmageText'
+  name: 'TmageText',
+  props: {
+    copy: Object
+  }
 }
 </script>
 
@@ -15,8 +19,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: color(light-pink);
 }
 </style>

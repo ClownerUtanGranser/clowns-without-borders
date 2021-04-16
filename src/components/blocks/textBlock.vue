@@ -1,12 +1,16 @@
 <template>
   <div class="textBlock">
-    <p>Text Block</p>
+    <h1 v-text="$props.copy.heading" />
+    <p v-html="$props.copy.body" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TextBlock'
+  name: 'TextBlock',
+  props: {
+    copy: Object
+  }
 }
 </script>
 
@@ -15,8 +19,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: color(yellow);
 }
 </style>

@@ -1,12 +1,15 @@
 <template>
   <div class="imageQuote">
-    <p>Image Quote Block</p>
+    <p v-text="$props.copy.body" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ImageQuote'
+  name: 'ImageQuote',
+  props: {
+    copy: Object
+  }
 }
 </script>
 
@@ -15,8 +18,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: color(light-yellow);
 }
 </style>
