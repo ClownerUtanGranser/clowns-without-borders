@@ -6,58 +6,58 @@
     <ChapterBlock :copy="copy.chapterOne" />
     <SubChapterBlock :copy="copy.subChapterOne" />
     <ImageQuoteBlock :copy="copy.quoteOne" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textOne" />
     <ChapterBlock :copy="copy.chapterTwo" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <StatsBlock :copy="copy.statsOne" />
     <ChapterBlock :copy="copy.chapterThree" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textThree" />
     <ChapterBlock :copy="copy.chapterFour" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ImageQuoteBlock :copy="copy.quoteTwo" />
     <SubChapterBlock :copy="copy.subChapterTwo" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <SubChapterBlock :copy="copy.subChapterThree" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <SubChapterBlock :copy="copy.subChapterFour" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ChapterBlock :copy="copy.chapterFour" />
     <StatsBlock :copy="copy.statsTwo" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textFour" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <StatsBlock :copy="copy.statsThree" />
     <ChapterBlock :copy="copy.chapterFour" />
     <SubChapterBlock :copy="copy.subChapterFive" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textFive" />
     <TextShapeBlock :copy="copy.textShapeOne" />
     <SubChapterBlock :copy="copy.subChapterSix" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ImageQuoteBlock :copy="copy.quoteThree" />
     <TextBlock :copy="copy.textSix" />
     <TextShapeBlock :copy="copy.textShapeTwo" />
     <TextBlock :copy="copy.textSeven" />
     <SubChapterBlock :copy="copy.subChapterSeven" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textEight" />
     <ImageQuoteBlock :copy="copy.quoteFour" />
     <SubChapterBlock :copy="copy.subChapterEight" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textNine" />
     <TextShapeBlock :copy="copy.textShapeThree" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ImageTextBlock :copy="copy.imageTextThree" />
     <TextBlock :copy="copy.textTen" />
     <ImageQuoteBlock :copy="copy.quoteFive" />
     <TextBlock :copy="copy.textEleven" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ChapterBlock :copy="copy.chapterFive" />
     <TextShapeBlock :copy="copy.textShapeFour" />
     <TextBlock :copy="copy.textTwelve" />

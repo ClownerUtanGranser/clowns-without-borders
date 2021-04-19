@@ -82,7 +82,6 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 105px;
-    border: 1px solid red;
     max-width: 507px;
   }
 
