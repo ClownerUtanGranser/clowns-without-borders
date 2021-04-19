@@ -6,7 +6,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  metaInfo: {
+    title: 'Clowns Without Borders'
+  }
 }
 </script>
 
