@@ -1,7 +1,17 @@
 <template>
   <div class="country">
-    <h1 v-text="$props.copy.heading" />
-    <p v-html="$props.copy.body" />
+    <div class="country__left">
+      <div class="country__textWrapper">
+        <h1 class="country__heading" v-text="$props.copy.heading" />
+        <p class="country__body" v-html="$props.copy.body" />
+      </div>
+    </div>
+    <div class="country__right">
+      <div class="country__circle">
+        <p class="country__countryHeading">Syria</p>
+        <img class="country__country" src="@/assets/images/syria.svg" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,12 +26,79 @@ export default {
 
 <style lang="scss">
 .country {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex-center;
+  background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
   min-height: 100vh;
   width: 100%;
-  background-color: color(yellow);
+
+  &__left,
+  &__right {
+    height: 100%;
+    width: 50vw;
+  }
+
+  &__left {
+    background-color: color(light-pink);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 165px 0;
+  }
+
+  &__right {
+    background-color: color(beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__circle {
+    background: url('~@/assets/images/circle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex-center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+  }
+
+  &__countryHeading {
+    font-family: 'Marguerite Grotesk';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: color(red);
+    margin-bottom: 10px;
+  }
+
+  &__country {
+    display: inline-flex;
+  }
+
+  &__heading {
+    font-family: 'Marguerite Grotesk';
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+    color: color(red);
+    margin: 30px 0;
+
+    @include mq($from: tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__textWrapper {
+    max-width: 484px;
+  }
+
+  &__body {
+    @include body;
+  }
 }
 </style>
