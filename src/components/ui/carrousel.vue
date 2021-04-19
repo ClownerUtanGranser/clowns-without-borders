@@ -1,19 +1,16 @@
 <template>
   <div class="carrousel">
     <swiper ref="carrousel" :options="swiperOptions" class="carrousel__container">
-      <swiper-slide>
+      <swiper-slide v-for="(item, index) in $props.copy.videos" :key="index">
         <div class="carrousel__item">
-          <p> swiper 1 </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="carrousel__item">
-          <p> swiper 2 </p>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="carrousel__item">
-          <p> swiper 3 </p>
+          <iframe
+            class="carrousel__iframe"
+            :src="item.src + '?controls=0'"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
         </div>
       </swiper-slide>
     </swiper>
@@ -35,7 +32,10 @@ export default {
   directives: {
     swiper: directive
   },
-  data() {
+  props: {
+    copy: Object
+  },
+  data () {
     return {
       swiperOptions: {
         slidesPerView: 1,
@@ -49,7 +49,7 @@ export default {
     }
   },
   computed: {
-    swiper() {
+    swiper () {
       return this.$refs.carrousel.$swiper
     }
   },
@@ -89,6 +89,18 @@ $arrow-height: 32px;
     p {
       margin: 0 auto;
     }
+  }
+
+  &__text {
+    position: absolute;
+    z-index: 1000;
+    left: 50px;
+    top: 50px;
+  }
+
+  &__iframe {
+    width: 100%;
+    height: 100%;
   }
 
   &__next,

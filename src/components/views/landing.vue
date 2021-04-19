@@ -2,7 +2,7 @@
   <div class="landing">
     <HeroBlock :copy="copy.hero" />
     <CountryBlock :copy="copy.introduction" />
-    <MediaBlock />
+    <MediaBlock :copy="copy.mediaOne" />
     <ChapterBlock :copy="copy.chapterOne" />
     <SubChapterBlock :copy="copy.subChapterOne" />
     <ImageQuoteBlock :copy="copy.quoteOne" />
