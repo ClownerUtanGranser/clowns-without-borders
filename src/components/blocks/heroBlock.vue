@@ -20,8 +20,6 @@ export default {
 <style lang="scss">
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
@@ -29,9 +27,14 @@ export default {
   color: color(white);
   position: relative;
 
+  background: url('~@/assets/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &__wrapper {
     position: absolute;
     left: 50%;
+    top: 32%;
     max-width: 693px;
   }
 
