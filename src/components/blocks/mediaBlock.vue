@@ -1,12 +1,17 @@
 <template>
   <div class="media">
-    <p>Media Block</p>
+    <Carrousel />
   </div>
 </template>
 
 <script>
+import Carrousel from '@/components/ui/carrousel'
+
 export default {
-  name: 'Media'
+  name: 'Media',
+  components: {
+    Carrousel
+  }
 }
 </script>
 
