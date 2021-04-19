@@ -70,13 +70,22 @@ $arrow-width: 18px;
 $arrow-height: 32px;
 
 .carrousel {
-  width: calc(680px + calc(#{$margin} * 4) + calc(#{$arrow-width} * 2));
-  height: 453px;
+  width: 100vw;
+  height: 100%;
   position: relative;
 
+  @include mq($from: tablet) {
+    width: calc(680px + calc(#{$margin} * 4) + calc(#{$arrow-width} * 2));
+  }
+
   &__container {
-    width: 680px;
-    height: 453px;
+    width: 100vw;
+    height: 100%;
+
+    @include mq($from: tablet) {
+      width: 680px;
+      height: 453px;
+    }
   }
 
   &__item {
@@ -85,6 +94,12 @@ $arrow-height: 32px;
     text-align: center;
     width: 100%;
     height: 100%;
+
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 66.62%;
+    }
 
     p {
       margin: 0 auto;

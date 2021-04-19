@@ -33,8 +33,13 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  padding: 96px 0;
   width: 100%;
   background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
+
+  @include mq($from: tablet) {
+    padding: 0px;
+    min-height: 100vh;
+  }
 }
 </style>

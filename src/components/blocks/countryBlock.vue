@@ -135,12 +135,17 @@ export default {
     font-family: 'Marguerite Grotesk';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     text-transform: uppercase;
     color: color(red);
     margin-bottom: 10px;
     z-index: 2;
+
+    @include mq($from: tablet) {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   &__country {
