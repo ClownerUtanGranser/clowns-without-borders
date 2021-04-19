@@ -9,20 +9,28 @@
     <div class="country__right">
       <div class="country__circleWrapper">
         <div class="country__circle">
-          <p class="country__countryHeading">Syria</p>
-          <img class="country__country" src="@/assets/images/syria.svg" />
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+            <p class="country__countryHeading">Syria</p>
+            <img class="country__country" src="@/assets/images/syria.svg" />
+          </Graphic>
         </div>
         <div class="country__circle">
-          <p class="country__countryHeading">Syria</p>
-          <img class="country__country" src="@/assets/images/syria.svg" />
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+            <p class="country__countryHeading">Syria</p>
+            <img class="country__country" src="@/assets/images/syria.svg" />
+          </Graphic>
         </div>
         <div class="country__circle">
-          <p class="country__countryHeading">Syria</p>
-          <img class="country__country" src="@/assets/images/syria.svg" />
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+            <p class="country__countryHeading">Syria</p>
+            <img class="country__country" src="@/assets/images/syria.svg" />
+          </Graphic>
         </div>
         <div class="country__circle">
-          <p class="country__countryHeading">Syria</p>
-          <img class="country__country" src="@/assets/images/syria.svg" />
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+            <p class="country__countryHeading">Syria</p>
+            <img class="country__country" src="@/assets/images/syria.svg" />
+          </Graphic>
         </div>
       </div>
     </div>
@@ -30,10 +38,15 @@
 </template>
 
 <script>
+import Graphic from '@/components/ui/graphic'
+
 export default {
   name: 'Country',
   props: {
     copy: Object
+  },
+  components: {
+    Graphic
   }
 }
 </script>
@@ -66,7 +79,7 @@ export default {
   }
 
   &__circle {
-    background: url('~@/assets/images/circle.svg');
+    // background: url('~@/assets/images/circle.svg');
     background-size: cover;
     background-repeat: no-repeat;
     @include flex-center;
@@ -94,10 +107,12 @@ export default {
     text-transform: uppercase;
     color: color(red);
     margin-bottom: 10px;
+    z-index: 2;
   }
 
   &__country {
     display: inline-flex;
+    z-index: 2;
   }
 
   &__heading {
