@@ -61,7 +61,7 @@
     <ChapterBlock :copy="copy.chapterFive" />
     <TextShapeBlock :copy="copy.textShapeFour" />
     <TextBlock :copy="copy.textTwelve" />
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
@@ -78,6 +78,7 @@ import TextBlock from '@/components/blocks/textBlock'
 import ImageTextBlock from '@/components/blocks/imageTextBlock'
 import StatsBlock from '@/components/blocks/statsBlock'
 import TextShapeBlock from '@/components/blocks/textShapeBlock'
+import Footer from '@/components/ui/footer'
 
 export default {
   name: 'Landing',
@@ -91,7 +92,8 @@ export default {
     TextBlock,
     ImageTextBlock,
     StatsBlock,
-    TextShapeBlock
+    TextShapeBlock,
+    Footer
   },
   data () {
     return {
