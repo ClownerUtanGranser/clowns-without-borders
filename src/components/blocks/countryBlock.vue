@@ -7,9 +7,23 @@
       </div>
     </div>
     <div class="country__right">
-      <div class="country__circle">
-        <p class="country__countryHeading">Syria</p>
-        <img class="country__country" src="@/assets/images/syria.svg" />
+      <div class="country__circleWrapper">
+        <div class="country__circle">
+          <p class="country__countryHeading">Syria</p>
+          <img class="country__country" src="@/assets/images/syria.svg" />
+        </div>
+        <div class="country__circle">
+          <p class="country__countryHeading">Syria</p>
+          <img class="country__country" src="@/assets/images/syria.svg" />
+        </div>
+        <div class="country__circle">
+          <p class="country__countryHeading">Syria</p>
+          <img class="country__country" src="@/assets/images/syria.svg" />
+        </div>
+        <div class="country__circle">
+          <p class="country__countryHeading">Syria</p>
+          <img class="country__country" src="@/assets/images/syria.svg" />
+        </div>
       </div>
     </div>
   </div>
@@ -49,8 +63,6 @@ export default {
     background-color: color(beige);
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 
   &__circle {
@@ -63,6 +75,15 @@ export default {
     border-radius: 50%;
     height: 230px;
     width: 230px;
+  }
+
+  &__circleWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 105px;
+    border: 1px solid red;
+    max-width: 507px;
   }
 
   &__countryHeading {
