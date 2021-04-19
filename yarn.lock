@@ -8194,6 +8194,11 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha1-UylVzB6yCKPZkLOp+acFdGV+CPI=
 
+vue-kinesis@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/vue-kinesis/-/vue-kinesis-1.2.3.tgz#56611e3f6db3ca30a60abd5b47848eb6a5252baa"
+  integrity sha512-/9pCCPRpaHnIyvvkBsCpAB5n1YKlJZV2u7bf1L1uPt/DlNRMfzzwoL0c9XAIPTV6fw7mnq+v7pOvfKprLjQCGw==
+
 "vue-loader-v16@npm:vue-loader@^16.1.0":
   version "16.2.0"
   resolved "https://registry.npm.taobao.org/vue-loader/download/vue-loader-16.2.0.tgz?cache=0&sync_timestamp=1616796552261&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-loader%2Fdownload%2Fvue-loader-16.2.0.tgz#046a53308dd47e58efe20ddec1edec027ce3b46e"

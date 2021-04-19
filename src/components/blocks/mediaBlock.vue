@@ -4,22 +4,22 @@
       v-if="$props.copy.videos && $props.copy.videos.length >= 2"
       v-bind="$props"
     />
-    <Video v-else-if="$props.copy.videos && $props.copy.videos.length === 1" />
-    <Image v-else-if="$props.copy.image" />
+    <MediaVideo v-else-if="$props.copy.videos && $props.copy.videos.length === 1" />
+    <MediaImage v-else-if="$props.copy.image" />
   </div>
 </template>
 
 <script>
 import Carrousel from '@/components/ui/carrousel'
-import Video from '@/components/ui/video'
-import Image from '@/components/ui/image'
+import MediaVideo from '@/components/ui/mediaVideo'
+import MediaImage from '@/components/ui/mediaImage'
 
 export default {
   name: 'Media',
   components: {
     Carrousel,
-    Video,
-    Image
+    MediaVideo,
+    MediaImage
   },
   props: {
     copy: Object

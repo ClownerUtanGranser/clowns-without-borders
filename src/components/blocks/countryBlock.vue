@@ -1,40 +1,45 @@
 <template>
-  <div class="country">
-    <div class="country__left">
-      <div class="country__textWrapper">
-        <h1 class="country__heading" v-text="$props.copy.heading" />
-        <p class="country__body" v-html="$props.copy.body" />
-      </div>
-    </div>
-    <div class="country__right">
-      <div class="country__circleWrapper">
-        <div class="country__circle">
-          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-            <p class="country__countryHeading">Syria</p>
-            <img class="country__country" src="@/assets/images/syria.svg" />
-          </Graphic>
-        </div>
-        <div class="country__circle">
-          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-            <p class="country__countryHeading">Syria</p>
-            <img class="country__country" src="@/assets/images/syria.svg" />
-          </Graphic>
-        </div>
-        <div class="country__circle">
-          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-            <p class="country__countryHeading">Syria</p>
-            <img class="country__country" src="@/assets/images/syria.svg" />
-          </Graphic>
-        </div>
-        <div class="country__circle">
-          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-            <p class="country__countryHeading">Syria</p>
-            <img class="country__country" src="@/assets/images/syria.svg" />
-          </Graphic>
+  <!-- <kinesis-container event="scroll"> -->
+    <div class="country">
+      <div class="country__left">
+        <!-- <kinesis-element :strength="1370" axis="y"> -->
+          <!-- <Graphic :width="'130px'" :height="'130px'" :color="'#B8BCFE'" /> -->
+        <!-- </kinesis-element> -->
+        <div class="country__textWrapper">
+          <h1 class="country__heading" v-text="$props.copy.heading" />
+          <p class="country__body" v-html="$props.copy.body" />
         </div>
       </div>
+      <div class="country__right">
+        <div class="country__circleWrapper">
+          <div class="country__circle">
+            <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+              <p class="country__countryHeading">Syria</p>
+              <img class="country__country" src="@/assets/images/syria.svg" />
+            </Graphic>
+          </div>
+          <div class="country__circle">
+            <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+              <p class="country__countryHeading">Syria</p>
+              <img class="country__country" src="@/assets/images/syria.svg" />
+            </Graphic>
+          </div>
+          <div class="country__circle">
+            <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+              <p class="country__countryHeading">Syria</p>
+              <img class="country__country" src="@/assets/images/syria.svg" />
+            </Graphic>
+          </div>
+          <div class="country__circle">
+            <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+              <p class="country__countryHeading">Syria</p>
+              <img class="country__country" src="@/assets/images/syria.svg" />
+            </Graphic>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  <!-- </kinesis-container> -->
 </template>
 
 <script>
