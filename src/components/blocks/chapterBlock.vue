@@ -1,11 +1,17 @@
 <template>
   <div class="chapter">
-    <h1 v-text="$props.copy.heading" />
-    <p v-text="$props.copy.body" />
+    <div class="chapter__wrapper">
+      <h1
+        v-if="$props.copy.heading"
+        class="chapter__heading"
+        v-text="$props.copy.heading"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Chapter',
   props: {
@@ -17,11 +23,40 @@ export default {
 <style lang="scss">
 .chapter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
   width: 100%;
-  background-color: color(beige);
+  height: 100vh;
+  background: linear-gradient(to bottom, color(light-purple) 50%, color(beige) 50%);
+
+  &__wrapper {
+    min-height: 353px;
+    display: flex;
+    align-items: center;
+    width: 77.5vw;
+    // padding: 60px 0;
+    background-color: color(red);
+    // transform: translateY(-50%);
+    border-radius: 0px 210px 210px 0px;
+
+    // @include mq($from: tablet) {
+    //   padding: 165px 0;
+    // }
+  }
+
+  &__heading {
+    font-size: 16px;
+    line-height: 29px;
+    font-family: 'Marguerite Grotesk';
+    color: color(white);
+    margin-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+
+    @include mq($from: tablet) {
+      font-size: 72px;
+      line-height: 80px;
+    }
+  }
 }
 </style>

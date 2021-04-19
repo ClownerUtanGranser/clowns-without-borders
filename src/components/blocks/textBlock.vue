@@ -40,15 +40,8 @@ export default {
 
   &__heading,
   &__body {
-    font-size: 16px;
-    line-height: 29px;
-    font-family: 'DM Sans';
+    @include body;
     text-align: center;
-
-    @include mq($from: tablet) {
-      font-size: 24px;
-      line-height: 35px;
-    }
   }
 
   &__heading {

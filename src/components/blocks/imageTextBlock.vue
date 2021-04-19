@@ -92,14 +92,7 @@ export default {
   }
 
   &__body {
-    font-size: 16px;
-    line-height: 29px;
-    font-family: 'DM Sans';
-
-    @include mq($from: tablet) {
-      font-size: 24px;
-      line-height: 35px;
-    }
+    @include body;
   }
 
   &__wrapper {

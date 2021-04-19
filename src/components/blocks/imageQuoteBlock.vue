@@ -112,9 +112,7 @@ export default {
   }
 
   &__body {
-    font-size: 16px;
-    line-height: 29px;
-    font-family: 'DM Sans';
+    @include body;
     text-align: center;
     color: color(yellow);
     z-index: 4;
@@ -123,11 +121,6 @@ export default {
     left: 60px;
     right: 60px;
     transform: translateY(-50%);
-
-    @include mq($from: tablet) {
-      font-size: 24px;
-      line-height: 35px;
-    }
   }
 
   &__wrapper {

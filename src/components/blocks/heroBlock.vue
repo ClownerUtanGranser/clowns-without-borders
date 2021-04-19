@@ -1,8 +1,9 @@
 <template>
   <div class="hero">
+    <img class="hero__logo" src="@/assets/images/logo.svg" />
     <div class="hero__wrapper">
-      <h1 v-text="$props.copy.heading" />
-      <p v-text="$props.copy.body" />
+      <h1 class="hero__heading" v-text="$props.copy.heading" />
+      <p class="hero__body" v-html="$props.copy.body" />
     </div>
   </div>
 </template>
@@ -26,11 +27,20 @@ export default {
   width: 100%;
   background-color: #3DB96D;
   color: color(white);
+  position: relative;
 
   &__wrapper {
     position: absolute;
     left: 50%;
     max-width: 693px;
+  }
+
+  &__logo {
+    width: 340px;
+    height: 44px;
+    position: absolute;
+    top: 30px;
+    right: 25px;
   }
 
   &__img {
@@ -39,6 +49,23 @@ export default {
     height: 100vh;
     object-fit: cover;
     display: none;
+  }
+
+  &__heading {
+    @include mq($from: tablet) {
+      font-size: 72px;
+      line-height: 80px;
+      text-transform: uppercase;
+      font-family: 'Marguerite Grotesk';
+      margin-bottom: 45px;
+    }
+  }
+
+  &__body {
+    max-width: 590px;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Marguerite Grotesk';
   }
 }
 </style>
