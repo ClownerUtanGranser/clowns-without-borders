@@ -8,6 +8,7 @@
 export default {
   name: 'App',
   metaInfo: {
+    title: 'Creative Arts for Peace and Equality',
     meta: [
       { name: 'title', content: 'Creative Arts for Peace and Equality' },
       { name: 'description', content: 'Creative Arts for Peace and Equality is a project started by Clowns Without Borders Sweden, financed by the Folke Bernadotte Academy.' },
