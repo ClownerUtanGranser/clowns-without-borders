@@ -87,6 +87,8 @@ export default {
 
   &__body {
     @include body;
+    font-size: 16px;
+    line-height: 19px;
 
     @include mq($from: tablet) {
       margin-left: 60px;

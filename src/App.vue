@@ -20,4 +20,8 @@ export default {
 
 <style>
 @import '/styles/reset.scss';
+
+#app {
+  overflow: hidden;
+}
 </style>

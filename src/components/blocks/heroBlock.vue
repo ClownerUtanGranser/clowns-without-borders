@@ -21,29 +21,46 @@ export default {
 .hero {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 423px;
   width: 100%;
   background-color: #3DB96D;
   color: color(white);
   position: relative;
-
-  background: url('~@/assets/images/hero.jpg');
+  background: url('~@/assets/images/hero-mobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include mq($from: tablet) {
+    background-image: url('~@/assets/images/hero.jpg');
+    min-height: 100vh;
+  }
+
   &__wrapper {
     position: absolute;
-    left: 50%;
-    top: 32%;
-    max-width: 693px;
+    left: 40px;
+    top: 40px;
+    // max-width: 693px;
+
+    @include mq($from: tablet) {
+      position: absolute;
+      left: 50%;
+      top: 32%;
+      max-width: 693px;
+    }
   }
 
   &__logo {
-    width: 340px;
-    height: 44px;
+    width: 113px;
     position: absolute;
-    top: 30px;
-    right: 25px;
+    top: 12px;
+    right: 12px;
+
+    @include mq($from: tablet) {
+      width: 340px;
+      height: 44px;
+      top: 30px;
+      right: 25px;
+    }
   }
 
   &__img {
@@ -55,6 +72,12 @@ export default {
   }
 
   &__heading {
+    font-family: 'Marguerite Grotesk';
+    font-size: 43px;
+    line-height: 52px;
+    text-transform: uppercase;
+    max-width: 250px;
+
     @include mq($from: tablet) {
       font-size: 72px;
       line-height: 80px;
@@ -65,10 +88,18 @@ export default {
   }
 
   &__body {
-    max-width: 590px;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 19px;
     font-family: 'Marguerite Grotesk';
+    max-width: 260px;
+
+    @include mq($from: tablet) {
+      font-size: 30px;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+      max-width: 590px;
+    }
   }
 }
 </style>
