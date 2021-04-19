@@ -60,13 +60,22 @@ export default {
 .country {
   @include flex-center;
   background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
 
   &__left,
   &__right {
     height: 100%;
-    width: 50vw;
+    width: 100vw;
+
+    @include mq($from: tablet) {
+      width: 50vw;
+    }
   }
 
   &__left {
@@ -74,13 +83,24 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 165px 0;
+    padding: 30px 20px;
+
+    @include mq($from: tablet) {
+      padding: 165px 0;
+    }
   }
 
   &__right {
     background-color: color(beige);
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+      padding: 0;
+    }
   }
 
   &__circle {
@@ -97,10 +117,18 @@ export default {
 
   &__circleWrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
-    row-gap: 105px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
     max-width: 507px;
+    justify-items: center;
+    padding: 60px 0;
+
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0px;
+      column-gap: 50px;
+      row-gap: 105px;
+    }
   }
 
   &__countryHeading {
@@ -123,13 +151,15 @@ export default {
   &__heading {
     font-family: 'Marguerite Grotesk';
     text-transform: uppercase;
-    font-size: 50px;
-    line-height: 60px;
+    line-height: 38px;
     color: color(red);
-    margin: 30px 0;
+    margin-bottom: 30px;
+    font-size: 32px;
 
     @include mq($from: tablet) {
-      margin-top: 0;
+      margin-bottom: 30px;
+      font-size: 50px;
+      line-height: 60px;
     }
   }
 
