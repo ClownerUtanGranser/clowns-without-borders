@@ -26,11 +26,16 @@ export default {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(to bottom, color(purple) 50%, color(beige) 50%);
+  min-height: 450px;
+  background: color(purple);
+
+  @include mq($from: tablet) {
+    background: linear-gradient(to bottom, color(purple) 50%, color(beige) 50%);
+    height: 100vh;
+  }
 
   &__wrapper {
-    min-height: 353px;
+    min-height: 286px;
     display: flex;
     align-items: center;
     width: 77.5vw;
@@ -39,23 +44,25 @@ export default {
     // transform: translateY(-50%);
     border-radius: 0px 210px 210px 0px;
 
-    // @include mq($from: tablet) {
-    //   padding: 165px 0;
-    // }
+    @include mq($from: tablet) {
+      // padding: 165px 0;
+      min-height: 353px;
+    }
   }
 
   &__heading {
-    font-size: 16px;
-    line-height: 29px;
     font-family: 'Marguerite Grotesk';
     color: color(white);
-    margin-left: 40px;
-    padding-right: 40px;
+    margin-left: 30px;
+    padding-right: 30px;
     text-transform: uppercase;
+    font-size: 43px;
+    line-height: 52px;
 
     @include mq($from: tablet) {
       font-size: 72px;
       line-height: 80px;
+      padding-right: 40px;
     }
   }
 }
