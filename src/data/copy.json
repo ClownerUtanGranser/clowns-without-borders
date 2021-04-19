@@ -38,7 +38,10 @@
     "body": "The training was led by experts from Clowns Without Borders Sweden and the Lebanese organisation Clown me In. In addition to giving every single participant a bag full of new knowledge, a big purpose of the training was to create a strong artistic network of artists in the region. <br/><br/> A network that together works for strengthening girls and women in their local society through psychosocial support workshops, as well as spreading awareness and commitment to peace and equality in the region. In this type of work, a good network is key and even though the trained artists have worked by themselves and in their own local community throughout the project, they have kept in constant contact, being each other's inspiration and support. <br/><br/> The artists and trainers also became role models for the participating girls and women in the project. Because of their visibility, artists engaging and speaking openly about such issues can help to spread the message of peace and equality. <br/><br/> Peace is spoken of here in terms of psychological peace and comfort, of being able to be positive and have peace of mind, and of managing differences in points of view, whether religious or political, with the goal of someday reaching equality. It’s like planting the seeds and watching how they develop – both enriching and stimulating."
   },
   "statsOne": {
-    "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.” <br/><br/> Stephanie Sotiry, trainer and artist, Lebanon"
+    "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.” <br/><br/> Stephanie Sotiry, trainer and artist, Lebanon",
+		"stats": [
+      { "heading": "Number of trained artists", "percentage": "41%"}
+    ]
   },
   "chapterThree": {
     "heading": "The words of Ghinwa, from Aleppo, Syria."
@@ -68,7 +71,7 @@
     "heading": "Arts therapy",
     "body": "Is used to offer a safe, non-verbal, creative way of expressing emotions, thoughts, reflections and experiences through arts and crafts. It includes painting, working with clay, making collages of newspaper clippings, or building own materials as musical instruments or clown nose/mask. "
   },
-  "chapterFour": {
+  "chapterFive": {
     "heading": "How culture and creativity can promote peace and equality"
   },
   "statsTwo": {
@@ -150,7 +153,7 @@
   "textEleven": {
 		"body": "How do you view the future? <br/><br/>– Each time I work with a group and I leave them, I feel if I’m leaving my home, especially after I break the barrier between us and I gain the group’s trust. I’m always happy to help women to stay away from negativity, to believe in art and to find their important role in their community. What we really need is to have more workshops and training, I hope Creative Arts for Peace and Equality can move to other countries as well. I wish also to have more training in theater via the project."
 	},
-  "chapterFive": {
+  "chapterSix": {
 		"heading": "Final words"
 	},
   "textShapeFour": {

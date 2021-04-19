@@ -80,7 +80,7 @@ export default {
 
   &__heading {
     font-family: 'Marguerite Grotesk';
-    // text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 50px;
     line-height: 60px;
     color: color(red);

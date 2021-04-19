@@ -1,23 +1,36 @@
 <template>
-  <div class="stats">
+  <div
+    class="stats"
+    :class="{
+      'stats-italic': $props.italic,
+    }"
+  >
     <div class="stats__left">
       <h1 class="stats__heading" v-text="$props.copy.heading" />
       <p class="stats__body" v-html="$props.copy.body" />
     </div>
     <div class="stats__right">
-      <img class="stats__circle" src="@/assets/images/circle.svg" />
-      <img class="stats__circle" src="@/assets/images/circle.svg" />
-      <img class="stats__circle" src="@/assets/images/circle.svg" />
-      <img class="stats__circle" src="@/assets/images/circle.svg" />
+      <div v-for="(item, index) in $props.copy.stats" :key="index">
+        <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+          <p class="country__countryHeading" v-text="item.heading" />
+          <p class="country__countryHeading" v-text="item.percentage" />
+        </Graphic>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Graphic from '@/components/ui/graphic'
+
 export default {
   name: 'Stats',
   props: {
-    copy: Object
+    copy: Object,
+    italic: Boolean
+  },
+  components: {
+    Graphic
   }
 }
 </script>
@@ -26,6 +39,10 @@ export default {
 .stats {
   @include flex-center;
   width: 100%;
+
+  &-italic {
+    font-style: italic;
+  }
 
   &__left,
   &__right {

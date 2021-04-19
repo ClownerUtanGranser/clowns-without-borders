@@ -1,5 +1,10 @@
 <template>
-  <div class="imageQuote">
+  <div
+    class="imageQuote"
+    :class="{
+      'imageQuote-flipped': $props.flipped,
+    }"
+  >
     <div class="imageQuote__left">
       <div class="imageQuote__circleWrapper">
         <p class="imageQuote__body" v-text="$props.copy.body" />
@@ -16,7 +21,8 @@
 export default {
   name: 'ImageQuote',
   props: {
-    copy: Object
+    copy: Object,
+    flipped: Boolean
   }
 }
 </script>
@@ -32,6 +38,14 @@ export default {
 
   @include mq($from: tablet) {
     flex-direction: row;
+  }
+
+  &-flipped {
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__left {

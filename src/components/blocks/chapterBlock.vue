@@ -27,7 +27,7 @@ export default {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, color(light-purple) 50%, color(beige) 50%);
+  background: linear-gradient(to bottom, color(purple) 50%, color(beige) 50%);
 
   &__wrapper {
     min-height: 353px;

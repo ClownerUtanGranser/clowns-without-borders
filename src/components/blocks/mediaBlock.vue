@@ -35,6 +35,6 @@ export default {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background-color: color(light-green);
+  background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
 }
 </style>

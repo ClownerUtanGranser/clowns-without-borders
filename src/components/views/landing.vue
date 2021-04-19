@@ -5,7 +5,7 @@
     <MediaBlock :copy="copy.mediaOne" />
     <ChapterBlock :copy="copy.chapterOne" />
     <SubChapterBlock :copy="copy.subChapterOne" />
-    <ImageQuoteBlock :copy="copy.quoteOne" />
+    <ImageQuoteBlock :copy="copy.quoteOne" :flipped="true" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textOne" />
     <ChapterBlock :copy="copy.chapterTwo" />
@@ -13,14 +13,14 @@
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
     <MediaBlock :copy="copy.mediaOne" />
-    <StatsBlock :copy="copy.statsOne" />
+    <StatsBlock :copy="copy.statsOne" :italic="true" />
     <ChapterBlock :copy="copy.chapterThree" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textThree" />
     <ChapterBlock :copy="copy.chapterFour" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
     <MediaBlock :copy="copy.mediaOne" />
-    <ImageQuoteBlock :copy="copy.quoteTwo" />
+    <ImageQuoteBlock :copy="copy.quoteTwo" :flipped="true" />
     <SubChapterBlock :copy="copy.subChapterTwo" />
     <MediaBlock :copy="copy.mediaOne" />
     <SubChapterBlock :copy="copy.subChapterThree" />
@@ -58,7 +58,7 @@
     <ImageQuoteBlock :copy="copy.quoteFive" />
     <TextBlock :copy="copy.textEleven" />
     <MediaBlock :copy="copy.mediaOne" />
-    <ChapterBlock :copy="copy.chapterFive" />
+    <ChapterBlock :copy="copy.chapterSix" />
     <TextShapeBlock :copy="copy.textShapeFour" />
     <TextBlock :copy="copy.textTwelve" />
     <Footer />
