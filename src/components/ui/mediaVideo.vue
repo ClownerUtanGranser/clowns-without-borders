@@ -25,6 +25,7 @@ export default {
 <style lang="scss">
 .mediaVideo {
   display: block;
+  background-color: color(red);
 
   &__wrapper {
     width: calc(100vw - 64px);

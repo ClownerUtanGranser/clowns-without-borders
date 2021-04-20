@@ -86,14 +86,31 @@
     "heading": "How culture and creativity can promote peace and equality"
   },
   "statsTwo": {
-    "body": "The Creative Arts for Peace and Equality program is based on four steps. The four steps can go into each other or run in parallel, but they all are part of reaching the end results. For each step, there are activities and exercises that aim to achieve the step’s goals. <br/><br/> Since both the artists leading the groups, and the participants, are unique and have different preferences, skills and needs, it’s important to leave creative and artistic freedom for facilitators to choose and adapt the exercises/methods."
+    "body": "The Creative Arts for Peace and Equality program is based on four steps. The four steps can go into each other or run in parallel, but they all are part of reaching the end results. For each step, there are activities and exercises that aim to achieve the step’s goals. <br/><br/> Since both the artists leading the groups, and the participants, are unique and have different preferences, skills and needs, it’s important to leave creative and artistic freedom for facilitators to choose and adapt the exercises/methods.",
+		"list": [
+      { "title": "Step 1", "body": "Trust and community." },
+      { "title": "Step 2", "body": "Reflection." },
+      { "title": "Step 3", "body": "Share and see shared experiences" },
+      { "title": "Step 4", "body": "Raising awareness and commitment." }
+    ]
   },
   "textFour": {
-    "body": "textFour"
+		"list": [
+      { "title": "Step 1 – Trust and community.<br/><br/>", "body": "The first part of the program focuses on building trust and community in the group through creativity by creating a room of relaxation, playfulness and laughter. This together gives the participants a respite from everyday uncertainty and worries and lays the foundation for further work. It is also important to build in humor and joy early on as it is important to reduce stress and anxiety, but also to fall back on when difficult themes emerge.<br/><br/><br/>" },
+      { "title": "Step 2 – Reflection.<br/><br/>", "body": "The next step in the program aims to create a space to reflect on emotions and experiences. Here, arts and crafts is an important method. Through different artistic expressions, the participants get to find their way through artistic expressions, expressing themselves, formulating thoughts and experiences. Many of those artists meet, live or have lived in complicated conditions and have heavy experiences in their luggage. This is a way of enabling reflection based on every person's position and maturity.<br/><br/><br/>" },
+      { "title": "Step 3 – Share and see shared experiences.<br/><br/>", "body": "After creating a space for reflection on feelings and experiences, comes the step to start to share these. Many of the women and girls in these groups live relatively isolated lives and there is often huge stigmas around sharing certain experiences, or saying things out loud. This step is important to create an understanding for that no one is alone in their experiences, that they often are a part of a social structure and that everyone has the human right to their experiences and feelings.<br/><br/><br/>" },
+      { "title": "Step 4 – Raising awareness and commitment.<br/><br/>", "body": "The last step is about raising awareness and to create a thought process about the structures and living conditions that affect women’s and girl’s lives. When working with this, it was obvious how sharing of experiences have led to insights that women do not have to endure certain things just because they are women. In some cases this has led to courageous life changes but it is just as much about the important insight of not being alone, that one has rights as a woman and there is an enormous strength in the collective." }
+    ]
   },
   "statsThree": {
 		"heading": "Tools",
-    "body": "In all steps creative and playful methods are used; there are also a variety of arts and crafts, story-telling, clown and theater exercises. The exercises are based on the participating women and girls receiving attention and feeling seen and heard, getting tools to express their feelings and experiences in a safe room and feeling part of a larger collective. This leads to greater discussions about women’s rights and what their needs are. "
+    "body": "In all steps creative and playful methods are used; there are also a variety of arts and crafts, story-telling, clown and theater exercises. The exercises are based on the participating women and girls receiving attention and feeling seen and heard, getting tools to express their feelings and experiences in a safe room and feeling part of a larger collective. This leads to greater discussions about women’s rights and what their needs are. ",
+		"list": [
+      { "title": "Number of participants so far in the project:", "body": "2500" },
+      { "title": "", "body": "" },
+      { "title": "", "body": "" },
+      { "title": "Number of groups so far in the project:", "body": "173" }
+    ]
   },
   "chapterSix": {
 		"heading": "Meet the people"
@@ -103,7 +120,8 @@
     "body": "Hi Ghinwa! Tell us a little bit about yourself and the situation in Syria. <br/><br/> – I live in Aleppo, Syria. The situation here is currently dire in every aspect of life: security, health, education, and the economy. People in Syria lack even the basics, such as electricity and petrol. The economic situation is difficult due to the Caesar Act, the United States legislation that sanctions the Syrian government for war crimes against the Syrian population. This caused our country’s currency to collapse, which affected the lives of ordinary people who are paying the price of the Syrian crisis. <br/><br/> Before the war I was living a very comfortable life with my family in Damascus. I moved to Aleppo when I got married. Then I got divorced from my husband, who didn’t want to stay in Syria, and suddenly I was alone. On top of this, I am working on a temporary contract within the humanitarian sector. If I lose my job, it will be hard to get a decent employment under these circumstances. Despite this, I’m trying to manage my responsibilities in life, but it is not easy for a divorced, independent woman to live by herself. Fortunately, my family supports my decisions."
   },
   "textFive": {
-    "body": "textFour"
+		"question": "What’s the biggest challenges for girls and women in Syria?",
+    "body": "<br/> – The biggest challenges women and girls face in our society is that they move from being under one authority to another: parental authority, the husband’s authority, and then the authority of one’s son – women have no choice in their own life. In addition, women in Aleppo suddenly had to take over the responsibilities for their families, in the absence of their husbands who were killed in the war."
   },
   "textShapeOne": {
     "body": "What are the biggest obstacles in your work? And how do you view the future? <br/><br/> – We are working in a country which is still under very difficult conditions. The Corona pandemic also made the situation more complicated. So people really need this project to continue. I worked with five women who are living in insecure areas, they did not accept me in the beginning of the workshop, and it took time around a month to reach any result with them. <br/><br/> We need to continue further, despite the circumstances, we shouldn’t stop.",
@@ -114,7 +132,7 @@
 		"body": "Tell us a little bit about yourself Rand! <br/><br/> – I am 28 years old, and I live and work in Jordan. I studied acting and directing and I love my field. I work with humanitarian organizations. I also work in children's theater and I love to do acting for children. I love to work with them with puppets, masks, and clowning. I have a methodology for what the child needs in order to express and discover himself or herself, which helps to strengthen their personality."
   },
   "quoteThree": {
-    "body": "'I used to beat my younger brother a lot, and he did as well.  After the sessions I tried to find a common language between us. Now we play a lot together and we have fun. He Is telling me many more things than before.' <br/><br/> Workshop participant, Jordan"
+    "body": "“I used to beat my younger brother a lot, and he did as well.  After the sessions I tried to find a common language between us. Now we play a lot together and we have fun. He Is telling me many more things than before.“ <br/><br/> Workshop participant, Jordan"
   },
   "textSix": {
 		"heading": "And how is the current situation in Jordan?",
@@ -183,5 +201,14 @@
 	},
   "textTwelve": {
 		"body": "About Clowns Without Borders Sweden <br/><br/>Clowns without Borders Sweden is a non-profit organization that was founded in Sweden 1996. Since the start, we have met and laughed with about two million children in the world’s crisis areas. Together with our 13 sibling organizations we are a part of Clowns without Borders International. <br/><br/>Our artists are professional clowns, musicians, actors and circus artists who donate their time and talent to the organization in the strong belief that laughter, play and joy makes the world a better place. Through performances and workshops we give children and youths, living in extreme vulnerability, psychosocial support and hope for the future. We also train staff and volunteers from other organizations in our playful and creative methods as a way to share our knowledge and reach more children in need. <br/><br/>Read more about Clowns without Borders Sweden’s work here https://clownerutangranser.se/. "
+	},
+	"imageTextFive": {
+		"question": "How has your participation in the Creative Arts for Peace and Equality project been?",
+		"body": "<br/> – My participation in the Creative Arts for Peace and Equality project was a very nice change in my life. It helped me to look at aspects of life in a positive way, and I met so many kinds of people – it was very motivating for me to meet people coming from Palestine. I learnt so many new tools through the project, such as art for equality, clowning, and multimedia. In Syria, we are taught that people have to be serious in life and we have to be grouchy people. In Creative Arts for Peace and Equality I realized that so many problems could be solved by a laugh and art tools, which was a chance for me to renew my energy."
+	},
+	"textFourteen": {
+		"intro": "In the clown part of the training, we worked hard to find the funny side in me. I couldn’t do it and it was very hard – under the war the Syrian people lost a big part of both our humanity and instinct, so it is not easy for us to release our laughter. Arts are a beautiful tool for creating a new connection that we use to renew our energy. We need to bring people back to dreaming, completing a drawing, or making a simple musical instrument – it will be a nice opportunity for participants in such a project.<br/><br/>",
+		"question": "And after the training then, how have you used the new knowledge in your local community? Have you seen any change in the participating girls and women?<br/><br/>",
+		"body": "– Creative Arts for Peace and Equality has helped to expand the work for women’s health and rights further. Women and girls have trained in using artistic tools, in order to apply them in marginalized societies. This is important work for making change at the societal level, in the long term. There are many refugees who have different problems, and they need to express themselves, especially women. <br/><br/>The goal was to work with women who in their turn can change realities – they are the ones who are working and educating their kids, supporting their husbands who violated them. When the Syrian crisis started, the Syrian women came to Lebanon. Women trained in social therapy to support them in their societies. Vivid examples illustrated the effectiveness of women in their societies. <br/><br/>– I trained a group of women, exploring each one’s strongest point and empowering them, and the group of women started to support each other. I trained the trainers workshop, with ten participants, then they became 20, and we are now 600 women. We were careful to keep the women’s privacy in mind there, since they live in a conservative society, and this is a big achievement for our workshops. <br/><br/>Through sharing their experiences in the workshops, the women realized that they do not have to endure certain things. This led them to be courageous in taking decisions and in changing their realities. For example, when I met a 55-year-old woman, who decided to divorce after a long marriage life full of abuse and violence, this woman got the strength after she participated in one of our workshops, she had the courage to confront tradition and society."
 	}
 }

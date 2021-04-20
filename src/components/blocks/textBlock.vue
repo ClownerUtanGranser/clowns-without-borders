@@ -8,6 +8,11 @@
           v-text="$props.copy.heading"
         />
         <p
+          v-if="$props.copy.intro"
+          class="textBlock__body"
+          v-html="$props.copy.intro"
+        />
+        <p
           v-if="$props.copy.question"
           class="textBlock__question"
           v-html="$props.copy.question"
@@ -17,6 +22,20 @@
           class="textBlock__body"
           v-html="$props.copy.body"
         />
+        <div
+          v-show="$props.copy.list"
+          v-for="(item, index) in $props.copy.list"
+          :key="index"
+        >
+          <p
+            class="textBlock__question"
+            v-html="item.title"
+          />
+          <p
+            class="textBlock__body"
+            v-html="item.body"
+          />
+        </div>
       </div>
     </Block>
   </div>

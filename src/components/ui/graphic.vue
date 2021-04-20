@@ -7,14 +7,13 @@
     }"
   >
     <slot />
-    <svg class="graphic__circle" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665 665">
-      <circle
-        cx="332.5"
-        cy="332.5"
-        r="332.5"
-        :fill="$props.color"
-      />
-    </svg>
+    <circle
+      class="graphic__circle"
+      cx="332.5"
+      cy="332.5"
+      r="332.5"
+      :fill="$props.color"
+    />
   </div>
 </template>
 
@@ -50,8 +49,9 @@ export default {
 
   &__circle {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 </style>

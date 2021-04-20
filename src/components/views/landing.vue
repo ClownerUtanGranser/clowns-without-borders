@@ -20,7 +20,7 @@
     <ChapterBlock :copy="copy.chapterFour" :smallerText="true" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
     <MediaBlock :copy="copy.mediaOne" />
-    <ImageQuoteBlock :copy="copy.quoteTwo" :flipped="true" />
+    <ImageQuoteBlock :copy="copy.quoteTwo" :flipped="true" :bigText="true"/>
     <SubChapterBlock :copy="copy.subChapterTwo" />
     <MediaBlock :copy="copy.mediaOne" />
     <SubChapterBlock :copy="copy.subChapterThree" />
@@ -37,10 +37,12 @@
     <SubChapterBlock :copy="copy.subChapterFive" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textFive" />
+    <ImageTextBlock :copy="copy.imageTextFive" />
+    <TextBlock :copy="copy.textFourteen" />
     <TextShapeBlock :copy="copy.textShapeOne" />
     <SubChapterBlock :copy="copy.subChapterSix" />
     <MediaBlock :copy="copy.mediaOne" />
-    <ImageQuoteBlock :copy="copy.quoteThree" />
+    <ImageQuoteBlock :copy="copy.quoteThree" :flipped="true" :bigText="true"/>
     <TextBlock :copy="copy.textSix" />
     <ImageTextBlock :copy="copy.imageTextThree" />
     <TextBlock :copy="copy.textThirteen" />
@@ -49,7 +51,7 @@
     <SubChapterBlock :copy="copy.subChapterSeven" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textEight" />
-    <ImageQuoteBlock :copy="copy.quoteFour" />
+    <ImageQuoteBlock :copy="copy.quoteFour" :flipped="true" :bigText="true"/>
     <SubChapterBlock :copy="copy.subChapterEight" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textNine" />
@@ -57,9 +59,9 @@
     <MediaBlock :copy="copy.mediaOne" />
     <ImageTextBlock :copy="copy.imageTextFour" />
     <TextBlock :copy="copy.textTen" />
-    <ImageQuoteBlock :copy="copy.quoteFive" />
+    <ImageQuoteBlock :copy="copy.quoteFive" :flipped="true" />
     <TextBlock :copy="copy.textEleven" />
-    <ImageTextBlock :copy="copy.imageTextFour" />
+    <ImageTextBlock :copy="copy.imageTextFour" :flipped="true" />
     <ChapterBlock :copy="copy.chapterSeven" />
     <!-- <TextShapeBlock :copy="copy.textShapeFour" /> -->
     <TextBlock :copy="copy.textTwelve" />

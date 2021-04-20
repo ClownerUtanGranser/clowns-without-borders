@@ -12,11 +12,30 @@
       <p v-if="$props.copy.writer" class="stats__body" v-text="$props.copy.writer" />
     </div>
     <div class="stats__right">
-      <div v-for="(item, index) in $props.copy.stats" :key="index">
-        <Graphic :width="'300px'" :height="'300px'" :color="'#CFE7CD'" class="stats__graphic">
-          <p class="stats__statsHeading" v-text="item.heading" />
-          <p class="stats__statsPercentage" v-text="item.percentage" />
-        </Graphic>
+      <div
+        v-if="$props.copy.list"
+        class="stats__circleWrapper"
+        :class="{'stats__circleWrapper-two': $props.copy.list[1].title === '' }"
+      >
+        <div
+          v-for="(item, index) in $props.copy.list"
+          :key="index"
+          class="stats__circle"
+          :class="'stats__circle-' + index"
+        >
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
+            <p
+              class="stats__countryHeading"
+              :class="{'stats__countryHeading-two': $props.copy.list[1].title === '' }"
+              v-text="item.title"
+            />
+            <p
+              class="stats__countryBody"
+              :class="{'stats__countryBody-two': $props.copy.list[1].title === '' }"
+              v-text="item.body"
+            />
+          </Graphic>
+        </div>
       </div>
     </div>
   </div>
@@ -75,10 +94,60 @@ export default {
     flex-wrap: wrap;
   }
 
-  &__graphic {
-    display: flex;
+  &__circleWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
     justify-content: center;
-    align-items: center;
+
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+
+    &-two {
+      column-gap: 0px;
+      row-gap: 0px;
+    }
+  }
+
+  &__circle {
+    overflow: hidden;
+    text-align: center;
+    @include flex-center;
+
+    &-1,
+    &-2 {
+      opacity: 0;
+    }
+  }
+
+  &__countryHeading,
+  &__countryBody {
+    font-family: 'Marguerite Grotesk';
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: color(red);
+    z-index: 2;
+  }
+
+  &__countryBody {
+    margin-top: 24px;
+
+    &-two {
+      font-size: 50px;
+      line-height: 60px;
+      color: color(black);
+    }
+  }
+
+  &__countryHeading {
+    &-two {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__statsHeading {

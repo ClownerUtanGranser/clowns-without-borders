@@ -80,19 +80,21 @@ export default {
     margin-left: 32px;
     text-transform: uppercase;
     font-size: 43px;
-    line-height: 80px;
+    line-height: 52px;
+    padding: 16px;
 
     @include mq($from: 900px) {
       font-size: 72px;
       line-height: 80px;
+      padding: 24px;
     }
   }
 
   &__body {
-    padding: 0px 32px 32px 32px;
+    padding: 32px;
 
     @include mq($from: 900px) {
-      padding-left: 0;
+      padding: 60px 0;
     }
   }
 

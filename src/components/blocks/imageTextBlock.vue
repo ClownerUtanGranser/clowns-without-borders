@@ -1,5 +1,5 @@
 <template>
-  <div class="imageText">
+  <div class="imageText" :class="{ 'imageText-flipped': $props.flipped }">
     <div class="imageText__left">
       <div class="imageText__textWrapper">
         <h1 v-if="$props.copy.heading" class="imageText__heading" v-text="$props.copy.heading" />
@@ -18,7 +18,8 @@
 export default {
   name: 'TmageText',
   props: {
-    copy: Object
+    copy: Object,
+    flipped: Boolean
   }
 }
 </script>
@@ -34,6 +35,12 @@ export default {
 
   @include mq($from: tablet) {
     flex-direction: row;
+  }
+
+  &-flipped {
+    @include mq($from: tablet) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__left {
