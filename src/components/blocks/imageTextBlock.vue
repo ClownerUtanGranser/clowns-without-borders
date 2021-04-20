@@ -2,8 +2,9 @@
   <div class="imageText">
     <div class="imageText__left">
       <div class="imageText__textWrapper">
-        <h1 class="imageText__heading" v-text="$props.copy.heading" />
-        <p class="imageText__body" v-text="$props.copy.body" />
+        <h1 v-if="$props.copy.heading" class="imageText__heading" v-text="$props.copy.heading" />
+        <p v-if="$props.copy.question" class="imageText__question" v-html="$props.copy.question" />
+        <p class="imageText__body" v-html="$props.copy.body" />
       </div>
     </div>
     <div class="imageText__right">
@@ -87,8 +88,13 @@ export default {
     }
   }
 
-  &__body {
+  &__body,
+  &__question {
     @include body;
+  }
+
+  &__question {
+    font-weight: bold;
   }
 }
 </style>

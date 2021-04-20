@@ -19,7 +19,7 @@ export default {
   name: 'Chapter',
   props: {
     copy: Object,
-    smallerText: Object
+    smallerText: Boolean
   }
 }
 </script>

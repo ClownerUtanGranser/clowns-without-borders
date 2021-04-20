@@ -8,9 +8,9 @@
     </div>
     <div class="textShape__right">
       <p
-        v-if="$props.copy.body"
+        v-if="$props.copy.quote"
         class="textShape__body textShape__body-inline"
-        v-html="$props.copy.body"
+        v-html="$props.copy.quote"
       />
     </div>
   </div>
@@ -32,6 +32,7 @@ export default {
   width: 100%;
   background: linear-gradient(to bottom, color(light-green) 50%, color(purple) 50%);
   position: relative;
+  overflow: hidden;
 
   @include mq($from: tablet) {
     flex-direction: row-reverse;

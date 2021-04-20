@@ -8,6 +8,11 @@
           v-text="$props.copy.heading"
         />
         <p
+          v-if="$props.copy.question"
+          class="textBlock__question"
+          v-html="$props.copy.question"
+        />
+        <p
           v-if="$props.copy.body"
           class="textBlock__body"
           v-html="$props.copy.body"
@@ -39,9 +44,14 @@ export default {
   background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
 
   &__heading,
-  &__body {
+  &__body,
+  &__question {
     @include body;
     text-align: center;
+  }
+
+  &__question {
+    font-weight: bold;
   }
 
   &__heading {

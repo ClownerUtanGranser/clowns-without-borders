@@ -6,6 +6,7 @@
       </div>
     </div>
     <div class="subChapter__right">
+      <p v-if="$props.copy.question" class="subChapter__question" v-text="$props.copy.question" />
       <p class="subChapter__body" v-html="$props.copy.body" />
     </div>
   </div>
@@ -37,8 +38,8 @@ export default {
     @include flex-center;
 
     @include mq($from: 900px) {
-      align-items: flex-start;
-      min-height: 836px;
+      // align-items: flex-start;
+      min-height: 100vh;
       width: 50vw;
     }
   }
@@ -54,6 +55,7 @@ export default {
 
   &__right {
     background-color: color(beige);
+    flex-direction: column;
   }
 
   &__headingWrapper {
@@ -66,7 +68,7 @@ export default {
     margin: 40px 0;
 
     @include mq($from: 900px) {
-      margin: 220px 0;
+      margin: 0;
       min-height: 164px;
       width: calc(100% - 20px);
     }
@@ -88,6 +90,14 @@ export default {
 
   &__body {
     padding: 0px 32px 32px 32px;
+
+    @include mq($from: 900px) {
+      padding-left: 0;
+    }
+  }
+
+  &__body,
+  &__question {
     font-size: 18px;
     line-height: 35px;
     font-family: 'DM Sans';
@@ -96,10 +106,15 @@ export default {
       font-size: 24px;
       line-height: 35px;
       padding-left: 0;
-      margin-top: 110px;
+  //     margin-top: 110px;
       margin-left: 60px;
-      max-width: 524px;
+      max-width: 520px;
     }
+  }
+
+  &__question {
+    font-weight: bold;
+    text-align: left;
   }
 }
 </style>
