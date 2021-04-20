@@ -103,22 +103,12 @@ export default {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 32px;
-  //   max-width: 507px;
 
     @include mq($from: tablet) {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 50px;
       row-gap: 50px;
     }
-  }
-
-  &__circle {
-  //   @include flex-center;
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   border-radius: 50%;
-  //   height: 230px;
-  //   width: 230px;
   }
 
   &__countryHeading {

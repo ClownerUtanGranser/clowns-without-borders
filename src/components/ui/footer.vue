@@ -21,7 +21,6 @@ export default {
   background-color: color(white);
   @include flex-center;
   justify-content: space-around;
-  border: 1px solid red;
 
   &__logo {
     height: 93px;

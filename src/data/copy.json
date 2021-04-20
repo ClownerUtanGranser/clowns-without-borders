@@ -9,6 +9,11 @@
   },
 	"mediaOne": {
 		"videos": [
+      { "src": "https://www.youtube-nocookie.com/embed/mtZ6B63RwmA" }
+    ]
+  },
+	"mediaTwo": {
+		"videos": [
       { "src": "https://www.youtube-nocookie.com/embed/mtZ6B63RwmA" },
       { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" },
       { "src": "https://www.youtube.com/embed/O4j9V-0sMqM" }
