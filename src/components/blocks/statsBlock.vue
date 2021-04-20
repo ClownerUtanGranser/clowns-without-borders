@@ -1,19 +1,21 @@
 <template>
-  <div
-    class="stats"
-    :class="{
-      'stats-italic': $props.italic,
-    }"
-  >
+  <div class="stats">
     <div class="stats__left">
       <h1 class="stats__heading" v-text="$props.copy.heading" />
-      <p class="stats__body" v-html="$props.copy.body" />
+      <p
+        class="stats__body"
+        v-html="$props.copy.body"
+        :class="{
+          'stats__body-italic': $props.italic,
+        }"
+      />
+      <p v-if="$props.copy.writer" class="stats__body" v-text="$props.copy.writer" />
     </div>
     <div class="stats__right">
       <div v-for="(item, index) in $props.copy.stats" :key="index">
-        <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-          <p class="country__countryHeading" v-text="item.heading" />
-          <p class="country__countryHeading" v-text="item.percentage" />
+        <Graphic :width="'300px'" :height="'300px'" :color="'#CFE7CD'" class="stats__graphic">
+          <p class="stats__statsHeading" v-text="item.heading" />
+          <p class="stats__statsPercentage" v-text="item.percentage" />
         </Graphic>
       </div>
     </div>
@@ -39,16 +41,26 @@ export default {
 .stats {
   @include flex-center;
   width: 100%;
+  flex-direction: column;
 
-  &-italic {
-    font-style: italic;
+  @include mq($from: tablet) {
+    flex-direction: row;
   }
 
   &__left,
   &__right {
-    min-height: 100vh;
-    width: 50vw;
-    @include flex-center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+
+    @include mq($from: tablet) {
+      width: 50vw;
+      min-height: 100vh;
+      padding: 0px;
+    }
   }
 
   &__left {
@@ -61,6 +73,32 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  &__graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__statsHeading {
+    text-align: center;
+    font-family: 'Marguerite Grotesk';
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: color(red);
+    z-index: 2;
+    max-width: 191px;
+    margin-bottom: 32px;
+  }
+
+  &__statsPercentage {
+    font-family: 'Marguerite Grotesk';
+    color: color(black);
+    font-size: 50px;
+    line-height: 60px;
+    z-index: 2;
   }
 
   &__circle {
@@ -93,6 +131,11 @@ export default {
     @include mq($from: tablet) {
       margin-left: 60px;
       margin-right: 120px;
+    }
+
+    &-italic {
+      font-family: 'DM Sans italic';
+      margin-bottom: 24px;
     }
   }
 }

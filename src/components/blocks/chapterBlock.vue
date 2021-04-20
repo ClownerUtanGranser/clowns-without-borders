@@ -5,6 +5,9 @@
         v-if="$props.copy.heading"
         class="chapter__heading"
         v-text="$props.copy.heading"
+        :class="{
+          'chapter__heading-small': $props.smallerText
+        }"
       />
     </div>
   </div>
@@ -15,7 +18,8 @@
 export default {
   name: 'Chapter',
   props: {
-    copy: Object
+    copy: Object,
+    smallerText: Object
   }
 }
 </script>
@@ -39,10 +43,16 @@ export default {
     min-height: 286px;
     display: flex;
     align-items: center;
-    width: 336px;
+    min-width: 336px;
+    margin-right: 40px;
     padding: 32px 0 37px 0;
     background-color: color(red);
     border-radius: 0px 210px 210px 0px;
+
+    &-longer {
+      width: auto;
+      margin-right: 40px;
+    }
 
     @include mq($from: tablet) {
       min-height: 353px;
@@ -55,7 +65,7 @@ export default {
     font-family: 'Marguerite Grotesk';
     color: color(white);
     margin-left: 32px;
-    padding-right: 40px;
+    padding-right: 50px;
     text-transform: uppercase;
     font-size: 43px;
     line-height: 52px;
@@ -64,6 +74,13 @@ export default {
       font-size: 72px;
       line-height: 80px;
       padding-right: 40px;
+    }
+
+    &-small {
+      @include mq($until: tablet) {
+        font-size: 36px;
+        line-height: 40px;
+      }
     }
   }
 }

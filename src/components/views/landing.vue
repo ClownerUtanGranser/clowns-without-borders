@@ -17,7 +17,7 @@
     <ChapterBlock :copy="copy.chapterThree" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textThree" />
-    <ChapterBlock :copy="copy.chapterFour" />
+    <ChapterBlock :copy="copy.chapterFour" :smallerText="true" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
     <MediaBlock :copy="copy.mediaOne" />
     <ImageQuoteBlock :copy="copy.quoteTwo" :flipped="true" />

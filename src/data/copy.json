@@ -48,7 +48,8 @@
     ]
   },
   "statsOne": {
-    "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.” <br/><br/> Stephanie Sotiry, trainer and artist, Lebanon",
+    "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.”",
+    "writer": "Stephanie Sotiry, trainer and artist, Lebanon",
 		"stats": [
       { "heading": "Number of trained artists", "percentage": "41%"}
     ]
@@ -97,9 +98,6 @@
   "statsThree": {
 		"heading": "Tools",
     "body": "In all steps creative and playful methods are used; there are also a variety of arts and crafts, story-telling, clown and theater exercises. The exercises are based on the participating women and girls receiving attention and feeling seen and heard, getting tools to express their feelings and experiences in a safe room and feeling part of a larger collective. This leads to greater discussions about women’s rights and what their needs are. "
-  },
-  "chapterFour": {
-    "heading": "Meet the people"
   },
   "subChapterFive": {
     "heading": "Ghinwa Alotibi, Syria",
