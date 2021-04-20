@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <img class="hero__logo" src="@/assets/images/logo.svg" />
+    <img class="hero__logo" src="@/assets/images/logo.svg" alt="Clowns logo" />
     <div class="hero__wrapper">
       <h1 class="hero__heading" v-text="$props.copy.heading" />
       <p class="hero__body" v-html="$props.copy.body" />
@@ -21,10 +21,8 @@ export default {
 .hero {
   display: flex;
   flex-direction: column;
-  min-height: 423px;
   width: 100%;
-  background-color: #3DB96D;
-  color: color(white);
+  height: 100%;
   position: relative;
   background: url('~@/assets/images/hero-mobile.jpg');
   background-size: cover;
@@ -36,69 +34,58 @@ export default {
   }
 
   &__wrapper {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-    // max-width: 693px;
+    padding: 32px 40px;
+    max-width: 370px;
 
     @include mq($from: tablet) {
-      position: absolute;
-      left: 50%;
-      top: 32%;
+      padding: 0px 40px 40px 0px;
+      margin-left: 50%;
+      margin-top: 32vh;
       max-width: 693px;
+      width: 50vw;
     }
   }
 
   &__logo {
     width: 113px;
+    height: auto;
     position: absolute;
     top: 12px;
     right: 12px;
 
     @include mq($from: tablet) {
       width: 340px;
-      height: 44px;
-      top: 30px;
-      right: 25px;
+      top: 32px;
+      right: 24px;
     }
   }
 
-  &__img {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    display: none;
+  &__heading,
+  &__body {
+    font-family: 'Marguerite Grotesk';
+    color: color(beige);
   }
 
   &__heading {
-    font-family: 'Marguerite Grotesk';
     font-size: 43px;
     line-height: 52px;
     text-transform: uppercase;
-    max-width: 250px;
+    margin-bottom: 24px;
 
     @include mq($from: tablet) {
       font-size: 72px;
       line-height: 80px;
-      text-transform: uppercase;
-      font-family: 'Marguerite Grotesk';
-      margin-bottom: 45px;
+      margin-bottom: 48px;
     }
   }
 
   &__body {
     font-size: 16px;
     line-height: 19px;
-    font-family: 'Marguerite Grotesk';
-    max-width: 260px;
 
     @include mq($from: tablet) {
       font-size: 30px;
       line-height: 40px;
-      text-transform: uppercase;
-      margin-bottom: 45px;
-      max-width: 590px;
     }
   }
 }

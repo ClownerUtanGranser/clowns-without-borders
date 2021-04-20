@@ -13,3 +13,10 @@ $colors: (
   light-green: #CFE7CD,
   light-purple: #EBEBFE
 );
+
+$breakpoints: (
+  mobile: '375px',
+  tablet: '736px',
+  laptop: '1024px',
+  desktop: '1800px',
+);
