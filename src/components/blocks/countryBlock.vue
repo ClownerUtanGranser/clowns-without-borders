@@ -63,13 +63,13 @@ export default {
   min-height: 100vh;
   width: 100%;
 
-  @include mq($from: tablet) {
+  @include mq($from: 1100px) {
     flex-direction: row;
   }
 
   &__left,
   &__right {
-    @include mq($from: tablet) {
+    @include mq($from: 1100px) {
       width: 50vw;
     }
   }
@@ -91,6 +91,10 @@ export default {
     padding: 32px;
 
     @include mq($from: tablet) {
+      padding: 165px 0;
+    }
+
+    @include mq($from: 1100px) {
       padding: 0;
     }
   }
@@ -104,7 +108,7 @@ export default {
     @include mq($from: tablet) {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 50px;
-      row-gap: 105px;
+      row-gap: 50px;
     }
   }
 
@@ -138,7 +142,7 @@ export default {
     color: color(red);
     margin-bottom: 24px;
 
-    @include mq($from: tablet) {
+    @include mq($from: 1100px) {
       margin-bottom: 48px;
       font-size: 50px;
       line-height: 60px;
