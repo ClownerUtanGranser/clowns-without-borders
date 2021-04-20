@@ -34,20 +34,20 @@ export default {
   }
 
   &__wrapper {
-    padding: 32px 40px;
+    padding: 32px;
     max-width: 370px;
 
     @include mq($from: tablet) {
       padding: 0px 40px 40px 0px;
       margin-left: 50%;
       margin-top: 32vh;
-      max-width: 693px;
+      max-width: 690px;
       width: 50vw;
     }
   }
 
   &__logo {
-    width: 113px;
+    width: 112px;
     height: auto;
     position: absolute;
     top: 12px;
