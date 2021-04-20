@@ -24,37 +24,38 @@ export default {
 .chapter {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   min-height: 450px;
   background: color(purple);
 
   @include mq($from: tablet) {
     background: linear-gradient(to bottom, color(purple) 50%, color(beige) 50%);
-    height: 100vh;
+    align-items: center;
+    min-height: 950px;
   }
 
   &__wrapper {
     min-height: 286px;
     display: flex;
     align-items: center;
-    width: 77.5vw;
-    // padding: 60px 0;
+    width: 336px;
+    padding: 32px 0 37px 0;
     background-color: color(red);
-    // transform: translateY(-50%);
     border-radius: 0px 210px 210px 0px;
 
     @include mq($from: tablet) {
-      // padding: 165px 0;
       min-height: 353px;
+      max-width: 1085px;
+      width: 77.5vw;
     }
   }
 
   &__heading {
     font-family: 'Marguerite Grotesk';
     color: color(white);
-    margin-left: 30px;
-    padding-right: 30px;
+    margin-left: 32px;
+    padding-right: 40px;
     text-transform: uppercase;
     font-size: 43px;
     line-height: 52px;

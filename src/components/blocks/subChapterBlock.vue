@@ -24,9 +24,10 @@ export default {
 .subChapter {
   @include flex-center;
   flex-direction: column;
+  background-color: color(light-pink);
   width: 100%;
 
-  @include mq($from: tablet) {
+  @include mq($from: 900px) {
     flex-direction: row;
   }
 
@@ -35,16 +36,18 @@ export default {
     width: 100vw;
     @include flex-center;
 
-    @include mq($from: tablet) {
-      min-height: 100vh;
+    @include mq($from: 900px) {
+      align-items: flex-start;
+      min-height: 836px;
       width: 50vw;
     }
   }
 
   &__left {
     background-color: color(beige);
+    justify-content: flex-start;
 
-    @include mq($from: tablet) {
+    @include mq($from: 900px) {
       background-color: color(light-pink);
     }
   }
@@ -56,39 +59,46 @@ export default {
   &__headingWrapper {
     min-height: 80px;
     background-color: color(green);
-    width: calc(100% - 20px);
     border-radius: 0px 100px 100px 0px;
     display: flex;
     align-items: center;
+    width: 77.5vw;
+    margin: 40px 0;
 
-    @include mq($from: tablet) {
+    @include mq($from: 900px) {
+      margin: 220px 0;
       min-height: 164px;
+      width: calc(100% - 20px);
     }
   }
 
   &__heading {
     font-family: 'Marguerite Grotesk';
     color: color(red);
-    margin-left: 40px;
-    padding-right: 40px;
+    margin-left: 32px;
     text-transform: uppercase;
     font-size: 43px;
     line-height: 80px;
 
-    @include mq($from: tablet) {
+    @include mq($from: 900px) {
       font-size: 72px;
       line-height: 80px;
     }
   }
 
   &__body {
-    @include body;
-    padding: 30px;
+    padding: 0px 32px 32px 32px;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: 'DM Sans';
 
-    @include mq($from: tablet) {
+    @include mq($from: 900px) {
+      font-size: 24px;
+      line-height: 35px;
+      padding-left: 0;
+      margin-top: 110px;
       margin-left: 60px;
-      margin-right: 120px;
-      padding: 0px;
+      max-width: 524px;
     }
   }
 }

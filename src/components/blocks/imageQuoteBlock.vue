@@ -7,7 +7,7 @@
   >
     <div class="imageQuote__left">
       <div class="imageQuote__circleWrapper">
-        <p class="imageQuote__body" v-text="$props.copy.body" />
+        <p class="imageQuote__body" v-html="$props.copy.body" />
         <img class="imageQuote__circle" src="@/assets/images/circle.svg" />
       </div>
     </div>
@@ -30,15 +30,16 @@ export default {
 <style lang="scss">
 .imageQuote {
   display: flex;
-  min-height: 1113px;
+  // min-height: 100vh;
   flex-direction: column-reverse;
-  width: 100%;
+  // width: 100%;
+  // height: 100%;
   background: color(yellow);
   position: relative;
 
   @include mq($from: tablet) {
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 900px;
   }
 
   &-flipped {
@@ -48,61 +49,64 @@ export default {
   }
 
   &__left {
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
+    width: 100%;
+    height: 100%;
     position: relative;
-  //
-  //   @include mq($from: tablet) {
-  //     flex-direction: row;
-  //     justify-content: center;
-  //     min-height: 100vh;
-  //     width: 50%;
-  //   }
+    overflow: hidden;
+    position: relative;
+
+    @include mq($from: tablet) {
+      width: 50%;
+      margin: auto 0;
+    }
   }
 
   &__circleWrapper {
+    position: relative;
+    margin: 32px 0px;
+
   //   width: 100%;
   //   height: 100%;
-  //   // height: calc(100% - 236px);
-  //   // width: calc(100% - 50px);
-  //   // background-color: color(green);
-  //   // border-radius: 50%;
-    position: absolute;
-  //   // display: flex;
-  //   // justify-content: center;
-  //   // align-items: center;
-  //   // left: 25px;
-  //   // top: 118px;
-  //   // left: 50%;
-  //   // top: 50%;
-  //   // transform: translate(-50%, -50%);
+  // //   // height: calc(100% - 236px);
+  // //   // width: calc(100% - 50px);
+  // //   // background-color: color(green);
+  // //   // border-radius: 50%;
+  // //   // left: 25px;
+  // //   // top: 118px;
+  // //   // left: 50%;
+  // //   // top: 50%;
+  // //   // transform: translate(-50%, -50%);
+  //
+    @include mq($from: tablet) {
+  //     position: absolute;
+  //     @include flex-center;
+    }
   }
 
   &__circle {
-    position: absolute;
-  //   width: calc(100% - 60px);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    // top: 0;
+  // //   width: calc(100% - 60px);
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    margin-left: 50%;
+    transform: translate(-50%);
     min-width: 665px;
 
     @include mq($from: tablet) {
-      left: 30px;
-      transform: translateY(-50%);
+      // position: absolute;
+  //     left: 30px;
+  //     transform: translateY(-50%);
     }
   }
-  //
-  // &__right {
-  //   width: 100%;
-  //   overflow: hidden;
-  //
-  //   @include mq($from: tablet) {
-  //     width: 50%;
-  //     height: 100vh;
-  //   }
-  // }
+
+  &__right {
+    width: 100%;
+
+    @include mq($from: tablet) {
+      width: 50%;
+  // //     height: 100vh;
+    }
+  }
 
   &__img {
     object-fit: cover;
@@ -122,26 +126,35 @@ export default {
   //   // text-transform: uppercase;
   //   font-size: 50px;
   //   line-height: 60px;
-  //   color: color(red);
+    // color: color(red);
   //   margin: 30px 0;
   //
   //   @include mq($from: tablet) {
   //     margin-top: 0;
   //   }
   // }
-  //
-  // &__body {
-  //   @include body;
-  //   text-align: center;
-  //   color: color(yellow);
-  //   z-index: 4;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 60px;
-  //   right: 60px;
-  //   transform: translateY(-50%);
-  // }
-  //
+
+  &__body {
+    font-family: "Marguerite Grotesk";
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: color(yellow);
+    z-index: 4;
+    position: absolute;
+    padding: 32px 32px;
+
+    @include mq($from: tablet) {
+  //     position: absolute;
+      top: 50%;
+      left: 60px;
+      right: 60px;
+      transform: translateY(-50%);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
   // &__wrapper {
   //   max-width: 740px;
   //   padding: 60px 0;
