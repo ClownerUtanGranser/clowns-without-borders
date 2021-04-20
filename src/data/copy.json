@@ -12,13 +12,6 @@
       { "src": "https://www.youtube-nocookie.com/embed/mtZ6B63RwmA" }
     ]
   },
-	"mediaTwo": {
-		"videos": [
-      { "src": "https://www.youtube-nocookie.com/embed/mtZ6B63RwmA" },
-      { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" },
-      { "src": "https://www.youtube.com/embed/O4j9V-0sMqM" }
-    ]
-  },
   "chapterOne": {
     "heading": "Being a girl in a man’s world"
   },
@@ -35,12 +28,24 @@
   "chapterTwo": {
     "heading": "A strong network is a start – and the future"
   },
+	"mediaThree": {
+		"videos": [
+      { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" }
+    ]
+  },
 	"imageTextOne": {
 		"heading": "A bag full of new knowledge",
 		"body": "The project started with a so-called “training of trainers” – a way to spread Clowns Without Borders methods to local agents around the Middle East;  more specifically female artists from Jordan, Lebanon, Palestine and Syria. During the training, the artists got tools and knowledge within a variety of areas including expressive arts, social therapy, arts and crafts, clowning and multimedia."
 	},
   "textTwo": {
     "body": "The training was led by experts from Clowns Without Borders Sweden and the Lebanese organisation Clown me In. In addition to giving every single participant a bag full of new knowledge, a big purpose of the training was to create a strong artistic network of artists in the region. <br/><br/> A network that together works for strengthening girls and women in their local society through psychosocial support workshops, as well as spreading awareness and commitment to peace and equality in the region. In this type of work, a good network is key and even though the trained artists have worked by themselves and in their own local community throughout the project, they have kept in constant contact, being each other's inspiration and support. <br/><br/> The artists and trainers also became role models for the participating girls and women in the project. Because of their visibility, artists engaging and speaking openly about such issues can help to spread the message of peace and equality. <br/><br/> Peace is spoken of here in terms of psychological peace and comfort, of being able to be positive and have peace of mind, and of managing differences in points of view, whether religious or political, with the goal of someday reaching equality. It’s like planting the seeds and watching how they develop – both enriching and stimulating."
+  },
+	"mediaFour": {
+		"videos": [
+      { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" },
+      { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" },
+      { "src": "https://www.youtube-nocookie.com/embed/_ATemRv60-Y" }
+    ]
   },
   "statsOne": {
     "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.” <br/><br/> Stephanie Sotiry, trainer and artist, Lebanon",

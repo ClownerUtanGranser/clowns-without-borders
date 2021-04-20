@@ -1,10 +1,10 @@
 <template>
   <div class="imageText">
     <div class="imageText__left">
-      <Block>
+      <div class="imageText__textWrapper">
         <h1 class="imageText__heading" v-text="$props.copy.heading" />
         <p class="imageText__body" v-text="$props.copy.body" />
-      </Block>
+      </div>
     </div>
     <div class="imageText__right">
       <img class="imageText__img" src="@/assets/images/dummy-img.png" />
@@ -13,15 +13,11 @@
 </template>
 
 <script>
-import Block from '@/components/ui/block'
 
 export default {
   name: 'TmageText',
   props: {
     copy: Object
-  },
-  components: {
-    Block
   }
 }
 </script>
@@ -40,27 +36,20 @@ export default {
   }
 
   &__left {
+    padding: 32px 32px 60px 32px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     @include mq($from: tablet) {
-      flex-direction: row;
-      justify-content: center;
-      padding-right: 100px;
-      min-height: 100vh;
+      @include flex-center;
       width: 50%;
     }
   }
 
   &__right {
     width: 100%;
-    overflow: hidden;
 
     @include mq($from: tablet) {
       width: 50%;
-      height: 100vh;
     }
   }
 
@@ -78,30 +67,28 @@ export default {
     }
   }
 
+  &__textWrapper {
+    @include mq($from: tablet) {
+      max-width: 460px;
+    }
+  }
+
   &__heading {
     font-family: 'Marguerite Grotesk';
     text-transform: uppercase;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 38px;
     color: color(red);
-    margin: 30px 0;
+    margin-bottom: 24px;
 
     @include mq($from: tablet) {
-      margin-top: 0;
+      font-size: 50px;
+      line-height: 60px;
     }
   }
 
   &__body {
     @include body;
-  }
-
-  &__wrapper {
-    max-width: 740px;
-    padding: 60px 0;
-
-    @include mq($from: tablet) {
-      padding: 165px 0;
-    }
   }
 }
 </style>
