@@ -1,8 +1,10 @@
 <template>
   <kinesis-container event="scroll">
     <div class="subChapter">
-      <div class="subChapter__pinkCircle" />
-      <kinesis-element :strength="75" class="subChapter__yellowCircle" />
+      <div class="subChapter__index">
+        <div class="subChapter__pinkCircle" />
+        <kinesis-element :strength="25" class="subChapter__yellowCircle" />
+      </div>
       <div class="subChapter__left">
         <div class="subChapter__headingWrapper">
           <h1 class="subChapter__heading" v-text="$props.copy.heading" />
@@ -32,6 +34,7 @@ export default {
   background-color: color(light-pink);
   width: 100%;
   position: relative;
+  z-index: -1;
 
   @include mq($from: 900px) {
     flex-direction: row;
@@ -137,6 +140,7 @@ export default {
     position: absolute;
     bottom: 0px;
     left: -30px;
+    border: 1px solid red;
 
     @include mq($from: tablet) {
       width: 285px;

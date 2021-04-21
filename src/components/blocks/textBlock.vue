@@ -1,8 +1,8 @@
 <template>
   <kinesis-container event="scroll">
     <div class="textBlock">
-      <kinesis-element :strength="25" class="textBlock__yellowCircle" />
-      <kinesis-element :strength="75" class="textBlock__greenCircle" />
+      <kinesis-element :strength="150" class="textBlock__yellowCircle" />
+      <kinesis-element :strength="100" class="textBlock__greenCircle" />
       <Block>
         <div class="textBlock__wrapper">
           <p

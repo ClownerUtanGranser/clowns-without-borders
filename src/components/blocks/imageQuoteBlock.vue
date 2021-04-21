@@ -50,6 +50,7 @@ export default {
   position: relative;
   justify-content: center;
   align-items: center;
+  z-index: -1;
 
   @include mq($from: 1024px) {
     flex-direction: row;

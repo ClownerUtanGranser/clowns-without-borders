@@ -37,6 +37,7 @@ export default {
   width: 100%;
   background: color(light-pink);
   position: relative;
+  z-index: -1;
 
   @include mq($from: tablet) {
     flex-direction: row;

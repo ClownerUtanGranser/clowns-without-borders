@@ -1,8 +1,8 @@
 <template>
   <kinesis-container event="scroll">
     <div class="media">
-      <kinesis-element :strength="75" class="media__purpleCircle" />
-      <kinesis-element :strength="25" class="media__yellowCircle" />
+      <kinesis-element :strength="250" class="media__purpleCircle" />
+      <kinesis-element :strength="100" class="media__yellowCircle" />
       <Carrousel
         v-if="$props.copy.videos || $props.copy.images"
         v-bind="$props"
@@ -45,6 +45,7 @@ export default {
   height: 100%;
   background: linear-gradient(to left, color(beige) 50%, color(light-pink) 50%);
   position: relative;
+  z-index: -1;
 
   @include mq($from: tablet) {
     padding: 224px 0;
@@ -60,8 +61,8 @@ export default {
     left: -22px;
 
     @include mq($from: tablet) {
-      width: 114px;
-      height: 114px;
+      width: 115px;
+      height: 115px;
       left: 114px;
       top: 160px;
     }

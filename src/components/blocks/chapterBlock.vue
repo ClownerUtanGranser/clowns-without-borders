@@ -2,8 +2,8 @@
   <kinesis-container event="scroll">
     <div class="chapter">
       <div class="chapter__pinkCircle" />
-      <kinesis-element :strength="25" class="chapter__yellowCircle" />
-      <kinesis-element :strength="75" class="chapter__greenCircle" />
+      <kinesis-element :strength="100" class="chapter__yellowCircle" />
+      <kinesis-element :strength="100" class="chapter__greenCircle" />
       <div class="chapter__wrapper">
         <h1
           v-if="$props.copy.heading"
@@ -89,7 +89,7 @@ export default {
   }
 
   &__yellowCircle {
-    width: 58px;
+    width: 55px;
     background-color: color(yellow);
     border-radius: 50%;
     position: absolute;
@@ -97,7 +97,7 @@ export default {
     left: 45px;
 
     @include mq($from: tablet) {
-      width: 101px;
+      width: 100px;
       left: 75px;
     }
 
@@ -119,7 +119,7 @@ export default {
       background-color: color(green);
       border-radius: 50%;
       position: absolute;
-      bottom: 50px;
+      bottom: 70px;
       right: 273px;
     }
 

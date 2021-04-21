@@ -3,10 +3,10 @@
     <div class="country">
       <div class="country__left">
         <div class="country__textWrapper">
-          <kinesis-element :strength="150" axis="y">
+          <kinesis-element :strength="200">
             <GraphicCircle
-              :height="'114px'"
-              :width="'114px'"
+              :height="'115px'"
+              :width="'115px'"
               :color="'purple'"
               :hiddenOnMobile="true"
             />
@@ -42,7 +42,7 @@
             </Graphic>
           </div>
         </div>
-        <kinesis-element :strength="200" class="country__test2" />
+        <kinesis-element :strength="200" class="country__yellowCircle" />
       </div>
     </div>
   </kinesis-container>
@@ -171,20 +171,16 @@ export default {
     @include body;
   }
 
-  &__test2 {
+  &__yellowCircle {
     @include mq($from: 1100px) {
-      width: 93px;
-      height: 93px;
+      width: 95px;
+      height: 95px;
       background-color: color(yellow);
       position: absolute;
       bottom: 118.5px;
       right: 72px;
       border-radius: 50%;
       z-index: 13;
-
-      // &:hover {
-      //   background-color: color(purple);
-      // }
     }
   }
 }
