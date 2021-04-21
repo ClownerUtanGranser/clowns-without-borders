@@ -96,7 +96,7 @@ export default {
   }
 
   &__body {
-    padding: 32px;
+    padding: 32px 32px 120px 32px;
 
     @include mq($from: 900px) {
       padding: 60px 0;
@@ -123,15 +123,20 @@ export default {
   &__question {
     font-weight: bold;
     text-align: left;
+    padding: 32px 32px 0px 32px;
+
+    @include mq($from: 900px) {
+      padding: 60px 0;
+    }
   }
 
   &__pinkCircle {
-    width: 146px;
+    width: 120px;
     background-color: color(pink);
     border-radius: 50%;
     position: absolute;
-    bottom: -55px;
-    left: -66px;
+    bottom: 0px;
+    left: -30px;
 
     @include mq($from: tablet) {
       width: 285px;

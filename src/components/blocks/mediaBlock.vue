@@ -74,13 +74,13 @@ export default {
   }
 
   &__yellowCircle {
-    width: 128px;
-    height: 128px;
+    width: 125px;
+    height: 125px;
     background-color: color(yellow);
     border-radius: 50%;
     position: absolute;
-    bottom: -45px;
-    right: -65px;
+    bottom: 20px;
+    right: -30px;
 
     @include mq($from: tablet) {
       width: 200px;

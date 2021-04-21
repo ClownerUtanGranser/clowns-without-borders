@@ -27,6 +27,10 @@ export default {
   &__logo {
     margin: 16px;
 
+    @include mq($until: tablet) {
+      max-width: 300px;
+    }
+
     &:nth-of-type(1) {
       width: 172px;
       height: 138px;

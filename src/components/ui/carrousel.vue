@@ -129,6 +129,7 @@ $arrow-height: 32px;
   &__iframe {
     width: 100%;
     height: 100%;
+    position: absolute;
   }
 
   &__next,
@@ -144,6 +145,10 @@ $arrow-height: 32px;
 
     &:hover {
       cursor: pointer;
+    }
+
+    @include mq($until: tablet) {
+      display: none;
     }
   }
 

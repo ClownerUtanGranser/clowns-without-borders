@@ -54,6 +54,7 @@ export default {
     padding: 32px 0 37px 0;
     background-color: color(red);
     border-radius: 0px 210px 210px 0px;
+    z-index: 5;
 
     &-longer {
       width: auto;

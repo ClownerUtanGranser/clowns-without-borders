@@ -21,7 +21,7 @@
           v-for="(item, index) in $props.copy.list"
           :key="index"
           class="stats__circle"
-          :class="{'stats__countryBody-two': !$props.copy.list[1].title, 'hidden': !$props.copy.list[1].title && index === 1, 'hidden2': !$props.copy.list[1].title && index === 2}"
+          :class="{'stats__circle-two': !$props.copy.list[1].title, 'hidden': !$props.copy.list[1].title && index === 1, 'hidden2': !$props.copy.list[1].title && index === 2}"
         >
           <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'" :class="{'hidden': !$props.copy.list[1].title && index === 1}">
             <p
@@ -144,6 +144,12 @@ export default {
     overflow: hidden;
     text-align: center;
     @include flex-center;
+
+    &-two {
+      &:first-of-type {
+        margin-bottom: 32px;
+      }
+    }
   }
 
   &__countryHeading,
@@ -223,6 +229,6 @@ export default {
 }
 
 .hidden, .hidden2 {
-  opacity: 0;
+  display: none;
 }
 </style>
