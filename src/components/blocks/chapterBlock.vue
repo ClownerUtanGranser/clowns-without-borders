@@ -1,16 +1,21 @@
 <template>
-  <div class="chapter">
-    <div class="chapter__wrapper">
-      <h1
-        v-if="$props.copy.heading"
-        class="chapter__heading"
-        v-text="$props.copy.heading"
-        :class="{
-          'chapter__heading-small': $props.smallerText
-        }"
-      />
+  <kinesis-container event="scroll">
+    <div class="chapter">
+      <div class="chapter__pinkCircle" />
+      <kinesis-element :strength="50" class="chapter__yellowCircle" />
+      <kinesis-element :strength="50" class="chapter__greenCircle" />
+      <div class="chapter__wrapper">
+        <h1
+          v-if="$props.copy.heading"
+          class="chapter__heading"
+          v-text="$props.copy.heading"
+          :class="{
+            'chapter__heading-small': $props.smallerText
+          }"
+        />
+      </div>
     </div>
-  </div>
+  </kinesis-container>
 </template>
 
 <script>
@@ -32,6 +37,7 @@ export default {
   width: 100%;
   min-height: 450px;
   background: color(purple);
+  position: relative;
 
   @include mq($from: tablet) {
     background: linear-gradient(to bottom, color(purple) 50%, color(beige) 50%);
@@ -58,6 +64,68 @@ export default {
       min-height: 353px;
       max-width: 1085px;
       width: 77.5vw;
+    }
+  }
+
+  &__pinkCircle {
+    width: 178px;
+    background-color: color(pink);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -72px;
+
+    @include mq($from: tablet) {
+      width: 475px;
+      right: -227px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &__yellowCircle {
+    width: 58px;
+    background-color: color(yellow);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 45px;
+
+    @include mq($from: tablet) {
+      width: 101px;
+      left: 75px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+
+  &__greenCircle {
+    display: none;
+
+    @include mq($from: tablet) {
+      display: inherit;
+      width: 219px;
+      right: 273px;
+      width: 178px;
+      background-color: color(green);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50px;
+      right: 273px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
     }
   }
 
