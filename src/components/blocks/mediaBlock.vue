@@ -1,8 +1,8 @@
 <template>
   <kinesis-container event="scroll">
     <div class="media">
-      <kinesis-element :strength="250" class="media__purpleCircle" />
-      <kinesis-element :strength="100" class="media__yellowCircle" />
+      <kinesis-element :strength="purpleCircleSpeed" class="media__purpleCircle" />
+      <kinesis-element :strength="yellowCircleSpeed" class="media__yellowCircle" />
       <Carrousel
         v-if="$props.copy.videos || $props.copy.images"
         v-bind="$props"
@@ -33,6 +33,22 @@ export default {
   },
   props: {
     copy: Object
+  },
+  computed: {
+    yellowCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 25
+      } else {
+        return 100
+      }
+    },
+    purpleCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 50
+      } else {
+        return 250
+      }
+    }
   }
 }
 </script>

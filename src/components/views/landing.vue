@@ -4,7 +4,7 @@
     <CountryBlock :copy="copy.introduction" />
     <MediaBlock :copy="copy.mediaOne" />
     <ChapterBlock :copy="copy.chapterOne" />
-    <SubChapterBlock :copy="copy.subChapterOne" />
+    <SubChapterBlock :copy="copy.subChapterOne" :margin="true" />
     <ImageQuoteBlock :copy="copy.quoteOne" :flipped="true" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textOne" />
@@ -111,5 +111,13 @@ export default {
 .landing {
   height: auto;
   width: 100%;
+
+  .above {
+    z-index: 2;
+  }
+
+  .under {
+    z-index: -1;
+  }
 }
 </style>

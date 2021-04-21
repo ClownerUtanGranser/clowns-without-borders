@@ -2,8 +2,14 @@
   <kinesis-container event="scroll">
     <div class="chapter">
       <div class="chapter__pinkCircle" />
-      <kinesis-element :strength="100" class="chapter__yellowCircle" />
-      <kinesis-element :strength="100" class="chapter__greenCircle" />
+      <kinesis-element
+        :strength="yellowCircleSpeed"
+        class="chapter__yellowCircle"
+      />
+      <kinesis-element
+        :strength="greenCircleSpeed"
+        class="chapter__greenCircle"
+      />
       <div class="chapter__wrapper">
         <h1
           v-if="$props.copy.heading"
@@ -25,6 +31,18 @@ export default {
   props: {
     copy: Object,
     smallerText: Boolean
+  },
+  computed: {
+    yellowCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 50
+      } else {
+        return 100
+      }
+    },
+    greenCircleSpeed: function () {
+      return 100
+    }
   }
 }
 </script>
@@ -119,7 +137,7 @@ export default {
       background-color: color(green);
       border-radius: 50%;
       position: absolute;
-      bottom: 70px;
+      bottom: 50px;
       right: 273px;
     }
 

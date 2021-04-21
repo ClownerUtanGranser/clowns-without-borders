@@ -2,7 +2,7 @@
   <kinesis-container event="scroll">
     <div class="subChapter">
       <div class="subChapter__index">
-        <div class="subChapter__pinkCircle" />
+        <div class="subChapter__pinkCircle" :class="{'subChapter__pinkCircle-margin': $props.margin }"/>
         <kinesis-element :strength="25" class="subChapter__yellowCircle" />
       </div>
       <div class="subChapter__left">
@@ -22,7 +22,17 @@
 export default {
   name: 'SubChapter',
   props: {
-    copy: Object
+    copy: Object,
+    margin: Boolean
+  },
+  computed: {
+    yellowCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 25
+      } else {
+        return 25
+      }
+    }
   }
 }
 </script>
@@ -140,13 +150,16 @@ export default {
     position: absolute;
     bottom: 0px;
     left: -30px;
-    border: 1px solid red;
 
     @include mq($from: tablet) {
       width: 285px;
       right: -227px;
-      bottom: 0;
+      bottom: 0px;
       left: 0;
+
+      &-margin {
+        bottom: -30px;
+      }
     }
 
     &::after {

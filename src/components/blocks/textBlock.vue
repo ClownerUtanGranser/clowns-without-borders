@@ -65,6 +65,22 @@ export default {
   },
   components: {
     Block
+  },
+  computed: {
+    yellowCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 25
+      } else {
+        return 150
+      }
+    },
+    greenCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 75
+      } else {
+        return 100
+      }
+    }
   }
 }
 </script>

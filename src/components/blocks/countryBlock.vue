@@ -3,7 +3,7 @@
     <div class="country">
       <div class="country__left">
         <div class="country__textWrapper">
-          <kinesis-element :strength="200">
+          <kinesis-element :strength="purpleCircleSpeed">
             <GraphicCircle
               :height="'115px'"
               :width="'115px'"
@@ -42,7 +42,7 @@
             </Graphic>
           </div>
         </div>
-        <kinesis-element :strength="200" class="country__yellowCircle" />
+        <kinesis-element :strength="yellowCircleSpeed" class="country__yellowCircle" />
       </div>
     </div>
   </kinesis-container>
@@ -60,6 +60,22 @@ export default {
   components: {
     Graphic,
     GraphicCircle
+  },
+  computed: {
+    purpleCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 150
+      } else {
+        return 200
+      }
+    },
+    yellowCircleSpeed: function () {
+      if (window.innerWidth <= 768) {
+        return 150
+      } else {
+        return 200
+      }
+    }
   }
 }
 </script>
