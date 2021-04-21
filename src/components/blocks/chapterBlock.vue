@@ -2,8 +2,8 @@
   <kinesis-container event="scroll">
     <div class="chapter">
       <div class="chapter__pinkCircle" />
-      <kinesis-element :strength="50" class="chapter__yellowCircle" />
-      <kinesis-element :strength="50" class="chapter__greenCircle" />
+      <kinesis-element :strength="25" class="chapter__yellowCircle" />
+      <kinesis-element :strength="75" class="chapter__greenCircle" />
       <div class="chapter__wrapper">
         <h1
           v-if="$props.copy.heading"
