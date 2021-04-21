@@ -147,7 +147,9 @@ export default {
 
     &-two {
       &:first-of-type {
-        margin-bottom: 32px;
+        @include mq($until: tablet) {
+          margin-bottom: 32px;
+        }
       }
     }
   }
@@ -230,5 +232,10 @@ export default {
 
 .hidden, .hidden2 {
   display: none;
+
+  @include mq($from: tablet) {
+    opacity: 0;
+    display: inherit;
+  }
 }
 </style>
