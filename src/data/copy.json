@@ -59,8 +59,8 @@
   "statsOne": {
     "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.”",
     "writer": "Stephanie Sotiry, trainer and artist, Lebanon",
-		"stats": [
-      { "heading": "Number of trained artists", "percentage": "41%"}
+		"item": [
+			{ "title": "Number of trained artists", "body": "41%" }
     ]
   },
   "chapterThree": {

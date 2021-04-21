@@ -15,10 +15,33 @@
       <div
         v-if="$props.copy.list"
         class="stats__circleWrapper"
-        :class="{'stats__circleWrapper-two': $props.copy.list[1].title === '' }"
+        :class="{'stats__circleWrapper-two': !$props.copy.list[1].title}"
       >
         <div
           v-for="(item, index) in $props.copy.list"
+          :key="index"
+          class="stats__circle"
+          :class="{'stats__countryBody-two': !$props.copy.list[1].title, 'hidden': !$props.copy.list[1].title && index === 1, 'hidden2': !$props.copy.list[1].title && index === 2}"
+        >
+          <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'" :class="{'hidden': !$props.copy.list[1].title && index === 1}">
+            <p
+              class="stats__countryHeading"
+              v-text="item.title"
+            />
+            <p
+              class="stats__countryBody"
+              v-text="item.body"
+            />
+          </Graphic>
+        </div>
+      </div>
+
+      <div
+        v-if="$props.copy.item"
+        class="stats__circleWrapper-one"
+      >
+        <div
+          v-for="(item, index) in $props.copy.item"
           :key="index"
           class="stats__circle"
           :class="'stats__circle-' + index"
@@ -26,17 +49,16 @@
           <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
             <p
               class="stats__countryHeading"
-              :class="{'stats__countryHeading-two': $props.copy.list[1].title === '' }"
               v-text="item.title"
             />
             <p
               class="stats__countryBody"
-              :class="{'stats__countryBody-two': $props.copy.list[1].title === '' }"
               v-text="item.body"
             />
           </Graphic>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -106,6 +128,12 @@ export default {
       row-gap: 50px;
     }
 
+    &-one {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 0px;
+      row-gap: 0px;
+    }
+
     &-two {
       column-gap: 0px;
       row-gap: 0px;
@@ -116,11 +144,6 @@ export default {
     overflow: hidden;
     text-align: center;
     @include flex-center;
-
-    &-1,
-    &-2 {
-      opacity: 0;
-    }
   }
 
   &__countryHeading,
@@ -135,19 +158,9 @@ export default {
 
   &__countryBody {
     margin-top: 24px;
-
-    &-two {
-      font-size: 50px;
-      line-height: 60px;
-      color: color(black);
-    }
   }
 
   &__countryHeading {
-    &-two {
-      font-size: 20px;
-      line-height: 24px;
-    }
   }
 
   &__statsHeading {
@@ -207,5 +220,9 @@ export default {
       margin-bottom: 24px;
     }
   }
+}
+
+.hidden, .hidden2 {
+  opacity: 0;
 }
 </style>
