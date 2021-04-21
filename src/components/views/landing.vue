@@ -57,13 +57,13 @@
     <TextBlock :copy="copy.textNine" />
     <TextShapeBlock :copy="copy.textShapeThree" />
     <MediaBlock :copy="copy.mediaOne" />
-    <ImageTextBlock :copy="copy.imageTextFour" />
+    <ImageTextBlock :copy="copy.imageTextSix" />
     <TextBlock :copy="copy.textTen" />
     <ImageQuoteBlock :copy="copy.quoteFive" :flipped="true" />
     <TextBlock :copy="copy.textEleven" />
     <ImageTextBlock :copy="copy.imageTextFour" :flipped="true" />
     <ChapterBlock :copy="copy.chapterSeven" />
-    <!-- <TextShapeBlock :copy="copy.textShapeFour" /> -->
+    <TextShapeBlock :copy="copy.textShapeFive" />
     <TextBlock :copy="copy.textTwelve" />
     <Footer />
   </div>

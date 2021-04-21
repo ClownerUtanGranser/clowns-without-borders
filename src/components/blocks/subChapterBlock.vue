@@ -95,6 +95,7 @@ export default {
 
     @include mq($from: 900px) {
       padding: 60px 0;
+      margin-right: 32px;
     }
   }
 

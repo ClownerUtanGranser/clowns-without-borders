@@ -16,34 +16,40 @@ export default {
 
 <style lang="scss">
 .footer {
-  height: 300px;
+  min-height: 300px;
   width: 100%;
   background-color: color(white);
   @include flex-center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 32px;
 
   &__logo {
-    height: 93px;
-    width: auto;
+    margin: 16px;
 
     &:nth-of-type(1) {
-      width: 11.94%
+      width: 172px;
+      height: 138px;
     }
 
     &:nth-of-type(2) {
-      width: 10.694%;
+      width: 154px;
+      height: 143px;
     }
 
     &:nth-of-type(3) {
-      width: 16.18%;
+      width: 233px;
+      height: 93px;
     }
 
     &:nth-of-type(4) {
-      width: 13.9583%;
+      width: 201px;
+      height: 123px;
     }
 
     &:nth-of-type(5) {
-      width: 27.083%;
+      width: 390px;
+      height: 51px;
     }
   }
 }

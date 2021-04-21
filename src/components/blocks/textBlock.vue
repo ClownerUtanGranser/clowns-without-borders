@@ -22,6 +22,16 @@
           class="textBlock__body"
           v-html="$props.copy.body"
         />
+        <p
+          v-if="$props.copy.question2"
+          class="textBlock__question"
+          v-html="$props.copy.question2"
+        />
+        <p
+          v-if="$props.copy.body2"
+          class="textBlock__body"
+          v-html="$props.copy.body2"
+        />
         <div
           v-show="$props.copy.list"
           v-for="(item, index) in $props.copy.list"
@@ -89,6 +99,10 @@ export default {
     @include mq($from: tablet) {
       padding: 165px 0;
     }
+  }
+
+  a {
+    color: color(red);
   }
 }
 </style>
