@@ -58,8 +58,8 @@ export default {
     }
   }
 
-  &:hover {
-    background-color: color(yellow);
-  }
+  // &:hover {
+  //   background-color: color(yellow);
+  // }
 }
 </style>

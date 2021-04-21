@@ -182,9 +182,9 @@ export default {
       border-radius: 50%;
       z-index: 13;
 
-      &:hover {
-        background-color: color(purple);
-      }
+      // &:hover {
+      //   background-color: color(purple);
+      // }
     }
   }
 }
