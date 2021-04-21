@@ -67,7 +67,6 @@ export default {
   }
 
   &__img {
-    background-color: color(red);
     object-fit: cover;
     object-position: center;
     display: block;

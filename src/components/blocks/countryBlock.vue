@@ -1,11 +1,16 @@
 <template>
-  <!-- <kinesis-container event="scroll"> -->
+  <kinesis-container event="scroll">
     <div class="country">
       <div class="country__left">
-        <!-- <kinesis-element :strength="1370" axis="y"> -->
-          <!-- <Graphic :width="'130px'" :height="'130px'" :color="'#B8BCFE'" /> -->
-        <!-- </kinesis-element> -->
         <div class="country__textWrapper">
+          <kinesis-element :strength="150" axis="y">
+            <GraphicCircle
+              :height="'114px'"
+              :width="'114px'"
+              :color="'purple'"
+              :hiddenOnMobile="true"
+            />
+          </kinesis-element>
           <h1 class="country__heading" v-text="$props.copy.heading" />
           <p class="country__body" v-html="$props.copy.body" />
         </div>
@@ -20,7 +25,7 @@
           </div>
           <div class="country__circle">
             <Graphic :width="'230px'" :height="'230px'" :color="'#CFE7CD'">
-              <p class="country__countryHeading" v-text="'Palestine'" />
+              <p class="country__countryHeading country__countryHeading-palestine" v-text="'Palestine'" />
               <img class="country__country" src="@/assets/images/palestine.svg" />
             </Graphic>
           </div>
@@ -37,13 +42,15 @@
             </Graphic>
           </div>
         </div>
+        <kinesis-element :strength="200" class="country__test2" />
       </div>
     </div>
-  <!-- </kinesis-container> -->
+  </kinesis-container>
 </template>
 
 <script>
 import Graphic from '@/components/ui/graphic'
+import GraphicCircle from '@/components/ui/graphicCircle'
 
 export default {
   name: 'Country',
@@ -51,7 +58,8 @@ export default {
     copy: Object
   },
   components: {
-    Graphic
+    Graphic,
+    GraphicCircle
   }
 }
 </script>
@@ -81,7 +89,7 @@ export default {
     padding: 32px;
 
     @include mq($from: tablet) {
-      padding: 165px 0;
+      padding: 300px 0 165px 0;
     }
   }
 
@@ -89,6 +97,7 @@ export default {
     background-color: color(beige);
     @include flex-center;
     padding: 32px;
+    position: relative;
 
     @include mq($from: tablet) {
       padding: 165px 0;
@@ -111,6 +120,13 @@ export default {
     }
   }
 
+  &__circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: color(light-green);
+  }
+
   &__countryHeading {
     font-family: 'Marguerite Grotesk';
     font-size: 24px;
@@ -118,6 +134,12 @@ export default {
     text-transform: uppercase;
     color: color(red);
     z-index: 2;
+    margin-bottom: 16px;
+
+    &-palestine {
+      margin-bottom: -16px;
+      padding-top: 20px;
+    }
   }
 
   &__country {
@@ -141,10 +163,29 @@ export default {
 
   &__textWrapper {
     max-width: 484px;
+    position: relative;
+    z-index: 2;
   }
 
   &__body {
     @include body;
+  }
+
+  &__test2 {
+    @include mq($from: 1100px) {
+      width: 93px;
+      height: 93px;
+      background-color: color(yellow);
+      position: absolute;
+      bottom: 118.5px;
+      right: 72px;
+      border-radius: 50%;
+      z-index: 13;
+
+      &:hover {
+        background-color: color(purple);
+      }
+    }
   }
 }
 </style>
