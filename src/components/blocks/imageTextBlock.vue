@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="imageText__right">
-      <img class="imageText__img" src="@/assets/images/dummy-img.png" />
+      <img class="imageText__img" :src="imgSrc" />
     </div>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
   props: {
     copy: Object,
     flipped: Boolean
+  },
+  computed: {
+    imgSrc: function () {
+      return this.$props.copy.img ? require('@/assets/images/' + this.$props.copy.img) : '@/assets/images/dummy-img.png'
+    }
   }
 }
 </script>
@@ -62,8 +67,9 @@ export default {
   }
 
   &__img {
-    background-color: grey;
+    background-color: color(red);
     object-fit: cover;
+    object-position: center;
     display: block;
     height: 100%;
     width: 100%;

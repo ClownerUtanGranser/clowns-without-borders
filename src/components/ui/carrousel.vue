@@ -1,6 +1,7 @@
 <template>
   <div class="carrousel">
-    <swiper ref="carrousel" :options="swiperOptions" class="carrousel__container">
+
+    <swiper v-if="$props.copy.videos" ref="carrousel" :options="swiperOptions" class="carrousel__container">
       <swiper-slide v-for="(item, index) in $props.copy.videos" :key="index">
         <div class="carrousel__item">
           <iframe
@@ -14,6 +15,15 @@
         </div>
       </swiper-slide>
     </swiper>
+
+    <swiper v-else ref="carrousel" :options="swiperOptions" class="carrousel__container">
+      <swiper-slide v-for="(item, index) in $props.copy.images" :key="index">
+        <div class="carrousel__item">
+          <img class="carrousel__iframe" :src="imgSrc(index)" />
+        </div>
+      </swiper-slide>
+    </swiper>
+
     <div class="carrousel__prev" slot="button-prev" @click="onClickPrev" />
     <div class="carrousel__next" slot="button-next" @click="onClickNext" />
   </div>
@@ -59,6 +69,9 @@ export default {
     },
     onClickPrev: function () {
       this.$refs.carrousel.$swiper.slidePrev()
+    },
+    imgSrc: function (index) {
+      return this.$props.copy.images ? require('@/assets/images/' + this.$props.copy.images[index].src) : '@/assets/images/dummy-img.png'
     }
   }
 }

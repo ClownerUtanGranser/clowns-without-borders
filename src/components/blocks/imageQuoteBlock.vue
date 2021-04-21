@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="imageQuote__right">
-      <img class="imageQuote__img" src="@/assets/images/dummy-img.png" />
+      <img class="imageQuote__img" :src="imgSrc" />
     </div>
   </div>
 </template>
@@ -30,6 +30,11 @@ export default {
     copy: Object,
     flipped: Boolean,
     bigText: Boolean
+  },
+  computed: {
+    imgSrc: function () {
+      return this.$props.copy.img ? require('@/assets/images/' + this.$props.copy.img) : '@/assets/images/dummy-img.png'
+    }
   }
 }
 </script>
@@ -37,7 +42,7 @@ export default {
 <style lang="scss">
 .imageQuote {
   display: flex;
-  min-height: 665px;
+  min-height: 100vh;
   flex-direction: column-reverse;
   width: 100%;
   // // height: 100%;
@@ -148,7 +153,7 @@ export default {
     }
 
     @include mq($from: 1024px) {
-      min-height: 665px;
+      min-height: 100vh;
     }
   }
 

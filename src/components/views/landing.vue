@@ -12,10 +12,10 @@
     <MediaBlock :copy="copy.mediaOne" />
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
-    <MediaBlock :copy="copy.mediaFour" />
+    <MediaBlock :copy="copy.mediaTwo" />
     <StatsBlock :copy="copy.statsOne" :italic="true" />
     <ChapterBlock :copy="copy.chapterThree" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaThree" />
     <TextBlock :copy="copy.textThree" />
     <ChapterBlock :copy="copy.chapterFour" :smallerText="true" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
@@ -24,12 +24,12 @@
     <SubChapterBlock :copy="copy.subChapterTwo" />
     <MediaBlock :copy="copy.mediaOne" />
     <SubChapterBlock :copy="copy.subChapterThree" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaFive" />
     <SubChapterBlock :copy="copy.subChapterFour" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaSix" />
     <ChapterBlock :copy="copy.chapterFive" />
     <StatsBlock :copy="copy.statsTwo" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaSeven" />
     <TextBlock :copy="copy.textFour" />
     <MediaBlock :copy="copy.mediaOne" />
     <StatsBlock :copy="copy.statsThree" />
@@ -41,7 +41,7 @@
     <TextBlock :copy="copy.textFourteen" />
     <TextShapeBlock :copy="copy.textShapeOne" />
     <SubChapterBlock :copy="copy.subChapterSix" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaEight" />
     <ImageQuoteBlock :copy="copy.quoteThree" :flipped="true" :bigText="true"/>
     <TextBlock :copy="copy.textSix" />
     <ImageTextBlock :copy="copy.imageTextThree" />
@@ -53,7 +53,7 @@
     <TextBlock :copy="copy.textEight" />
     <ImageQuoteBlock :copy="copy.quoteFour" :flipped="true" :bigText="true"/>
     <SubChapterBlock :copy="copy.subChapterEight" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaNine" />
     <TextBlock :copy="copy.textNine" />
     <TextShapeBlock :copy="copy.textShapeThree" />
     <MediaBlock :copy="copy.mediaOne" />

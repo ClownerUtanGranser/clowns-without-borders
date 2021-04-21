@@ -1,15 +1,15 @@
 <template>
   <div class="media">
     <Carrousel
-      v-if="$props.copy.videos && $props.copy.videos.length >= 2"
+      v-if="$props.copy.videos || $props.copy.images"
       v-bind="$props"
     />
     <MediaVideo
-      v-else-if="$props.copy.videos && $props.copy.videos.length === 1"
+      v-else-if="$props.copy.video"
       v-bind="$props"
     />
     <MediaImage
-      v-else-if="$props.copy.image"
+      v-else-if="$props.copy.img"
       v-bind="$props"
     />
   </div>
