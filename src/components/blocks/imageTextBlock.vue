@@ -78,7 +78,7 @@ export default {
 
     @include mq($from: tablet) {
       &-margin {
-        padding-bottom: 55px;
+        padding-bottom: 30px;
       }
     }
 
@@ -97,16 +97,19 @@ export default {
 
   &__text {
     bottom: 0px;
-    margin: 10px 10px 0 10px;
+    margin: 3px 10px 0px 10px;
     z-index: 10;
-    color: color(red);
     @include body;
+    font-style: italic;
 
     @include mq($from: tablet) {
       position: absolute;
-      bottom: 12px;
+      font-size: 16px;
+      line-height: 29px;
+      bottom: 0px;
       left: 0px;
       margin: 0;
+      width: 100%
     }
   }
 

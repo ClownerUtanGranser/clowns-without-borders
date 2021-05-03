@@ -67,8 +67,7 @@ export default {
     @include flex-center;
 
     @include mq($from: 900px) {
-      // align-items: flex-start;
-      min-height: 100vh;
+      min-height: 900px;
       width: 50vw;
     }
   }
@@ -133,6 +132,7 @@ export default {
     font-size: 18px;
     line-height: 35px;
     font-family: 'DM Sans';
+    z-index: 2;
 
     @include mq($from: 900px) {
       font-size: 24px;
@@ -187,13 +187,14 @@ export default {
     border-radius: 50%;
     position: absolute;
     display: none;
+    z-index: 1;
 
     @include mq($from: tablet) {
       display: inherit;
       width: 94px;
       height: 94px;
       bottom: 70px;
-      right: 55px;
+      right: 30px;
     }
 
     &::after {

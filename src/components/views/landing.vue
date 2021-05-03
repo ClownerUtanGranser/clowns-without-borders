@@ -12,7 +12,7 @@
     <MediaBlock :copy="copy.mediaTen" />
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
-    <MediaBlock :copy="copy.mediaTwelve" />
+    <MediaBlock :copy="copy.mediaTwo" />
     <StatsBlock :copy="copy.statsOne" :italic="true" />
     <ChapterBlock :copy="copy.chapterThree" />
     <MediaBlock :copy="copy.mediaThree" />
@@ -31,7 +31,6 @@
     <StatsBlock :copy="copy.statsTwo" />
     <MediaBlock :copy="copy.mediaSeven" />
     <TextBlock :copy="copy.textFour" />
-    <p>here</p>
     <MediaBlock :copy="copy.mediaEightteen" />
     <StatsBlock :copy="copy.statsThree" />
     <ChapterBlock :copy="copy.chapterSix" />

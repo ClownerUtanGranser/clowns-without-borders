@@ -45,13 +45,15 @@ export default {
   &__text {
     position: absolute;
     bottom: -29px;
-    left: 0;
+    left: 0px;
     z-index: 10;
     color: color(red);
     @include body;
+    font-style: italic;
 
     @include mq($from: tablet) {
-      bottom: -45px;
+      font-size: 16px;
+      line-height: 29px;
     }
   }
 

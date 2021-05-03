@@ -154,13 +154,14 @@ export default {
 
     @include mq($from: tablet) {
       display: inherit;
-      right: 273px;
       width: 114px;
       background-color: color(green);
       border-radius: 50%;
       position: absolute;
       bottom: 450px;
-      right: 273px;
+      // right: 273px;
+      right: calc(50% - (57px + 480px));
+      transform: translateX(-50%);
     }
 
     &::after {
