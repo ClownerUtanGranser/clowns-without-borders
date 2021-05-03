@@ -83,6 +83,7 @@ export default {
   @include flex-center;
   width: 100%;
   flex-direction: column;
+  background-color: color(light-pink);
 
   @include mq($from: tablet) {
     flex-direction: row;
