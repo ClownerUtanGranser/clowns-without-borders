@@ -54,7 +54,6 @@ export default {
     bottom: -29px;
     left: 10px;
     z-index: 10;
-    color: color(red);
     @include body;
     font-style: italic;
 
