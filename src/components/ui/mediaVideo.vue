@@ -3,13 +3,14 @@
     <div class="mediaVideo__wrapper">
       <iframe
         class="mediaVideo__iframe"
-        :src="$props.copy.videos[0].src + '?controls=0'"
+        :src="$props.copy.video + '?controls=0'"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
     </div>
+    <p v-if="$props.copy.text" class="mediaVideo__text" v-text="$props.copy.text" />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ export default {
 .mediaVideo {
   display: block;
   background-color: color(red);
+  position: relative;
 
   &__wrapper {
     width: calc(100vw - 64px);
@@ -37,6 +39,19 @@ export default {
       content: '';
       display: block;
       padding-bottom: 66.62%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    z-index: 10;
+    color: color(red);
+    @include body;
+
+    @include mq($from: tablet) {
+      bottom: -45px;
     }
   }
 

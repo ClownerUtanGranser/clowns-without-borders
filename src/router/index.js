@@ -4,7 +4,6 @@ import Router from 'vue-router'
 import * as routeTypes from './route-types'
 
 import Landing from '@/components/views/landing.vue'
-import Test from '@/components/views/test.vue'
 
 Vue.use(Router)
 const router = new Router({
@@ -14,12 +13,6 @@ const router = new Router({
       ...routeTypes.LANDING,
       components: {
         default: Landing
-      }
-    },
-    {
-      ...routeTypes.TEST,
-      components: {
-        default: Test
       }
     }
   ]

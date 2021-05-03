@@ -12,7 +12,7 @@
         v-bind="$props"
       />
       <MediaImage
-        v-else-if="$props.copy.img"
+        v-else
         v-bind="$props"
       />
     </div>

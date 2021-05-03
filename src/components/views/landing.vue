@@ -2,27 +2,27 @@
   <div class="landing">
     <HeroBlock :copy="copy.hero" />
     <CountryBlock :copy="copy.introduction" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaEleven" />
     <ChapterBlock :copy="copy.chapterOne" />
     <SubChapterBlock :copy="copy.subChapterOne" :margin="true" />
     <ImageQuoteBlock :copy="copy.quoteOne" :flipped="true" />
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textOne" />
     <ChapterBlock :copy="copy.chapterTwo" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaTen" />
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
-    <MediaBlock :copy="copy.mediaTwo" />
+    <MediaBlock :copy="copy.mediaTwelve" />
     <StatsBlock :copy="copy.statsOne" :italic="true" />
     <ChapterBlock :copy="copy.chapterThree" />
     <MediaBlock :copy="copy.mediaThree" />
     <TextBlock :copy="copy.textThree" />
     <ChapterBlock :copy="copy.chapterFour" :smallerText="true" />
     <ImageTextBlock :copy="copy.imageTextTwo" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaThirteen" />
     <ImageQuoteBlock :copy="copy.quoteTwo" :flipped="true" :bigText="true"/>
     <SubChapterBlock :copy="copy.subChapterTwo" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <!-- <MediaBlock :copy="copy.mediaOne" /> -->
     <SubChapterBlock :copy="copy.subChapterThree" />
     <MediaBlock :copy="copy.mediaFive" />
     <SubChapterBlock :copy="copy.subChapterFour" />
@@ -31,11 +31,12 @@
     <StatsBlock :copy="copy.statsTwo" />
     <MediaBlock :copy="copy.mediaSeven" />
     <TextBlock :copy="copy.textFour" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <p>here</p>
+    <MediaBlock :copy="copy.mediaEightteen" />
     <StatsBlock :copy="copy.statsThree" />
     <ChapterBlock :copy="copy.chapterSix" />
     <SubChapterBlock :copy="copy.subChapterFive" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaFifteen" />
     <TextBlock :copy="copy.textFive" />
     <ImageTextBlock :copy="copy.imageTextFive" />
     <TextBlock :copy="copy.textFourteen" />
@@ -49,14 +50,14 @@
     <TextShapeBlock :copy="copy.textShapeTwo" />
     <TextBlock :copy="copy.textSeven" />
     <SubChapterBlock :copy="copy.subChapterSeven" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <!-- <MediaBlock :copy="copy.mediaOne" /> -->
     <TextBlock :copy="copy.textEight" />
     <ImageQuoteBlock :copy="copy.quoteFour" :flipped="true" :bigText="true"/>
     <SubChapterBlock :copy="copy.subChapterEight" />
     <MediaBlock :copy="copy.mediaNine" />
     <TextBlock :copy="copy.textNine" />
     <TextShapeBlock :copy="copy.textShapeThree" />
-    <MediaBlock :copy="copy.mediaOne" />
+    <MediaBlock :copy="copy.mediaSixteen" />
     <ImageTextBlock :copy="copy.imageTextSix" />
     <TextBlock :copy="copy.textTen" />
     <ImageQuoteBlock :copy="copy.quoteFive" :flipped="true" />
@@ -64,6 +65,7 @@
     <ImageTextBlock :copy="copy.imageTextFour" :flipped="true" />
     <ChapterBlock :copy="copy.chapterSeven" />
     <TextShapeBlock :copy="copy.textShapeFive" />
+    <MediaBlock :copy="copy.mediaSeventeen" />
     <TextBlock :copy="copy.textTwelve" />
     <Footer />
   </div>

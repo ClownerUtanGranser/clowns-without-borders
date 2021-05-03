@@ -1,16 +1,15 @@
 {
 	"hero": {
     "heading": "Creative Arts for Peace and Equality",
-    "body": "“What we are doing during these sessions is the first step to reach peace.” <br/><br/> Patricia Matar, Workshop participant, Lebanon "
+    "body": "“What we are doing during these sessions is the first step to reach peace.” <br/><br/> Patricia Matar, Workshop participant, Lebanon"
   },
   "introduction": {
     "heading": "introduction",
     "body": "Creative Arts for Peace and Equality is a project started by Clowns Without Borders Sweden, financed by the Folke Bernadotte Academy. <br/><br/> The aim is to support girls and women affected by war and conflict, minority groups, groups in vulnerable economic situations and women and girls exposed to violence and harassment, by strengthening their psychosocial wellbeing – a way to find peace within while working for peace in the world. <br/><br/> During the project we have trained local artists from Jordan, Lebanon, Palestine and Syria in Clowns Without Borders creative methods. The trained artists has then worked with women and girls in their local communities and together met over 2500 people. <br/><br/> The importance of the creative arts is the ability to express all of the feelings through it. This is something that gives a feeling of freedom in general, and psychological freedom in particular; this leads to equality and gives the strength to do many things in life. This is the link between arts and using it, which helps to achieve safety and equality. "
   },
 	"mediaOne": {
-		"videos": [
-      { "src": "https://www.youtube-nocookie.com/embed/mtZ6B63RwmA" }
-    ]
+		"video": "https://www.youtube.com/embed/YbDlBU8GNIU",
+		"text": "Photographer: Joelle"
   },
   "chapterOne": {
     "heading": "Being a girl in a man’s world"
@@ -60,14 +59,15 @@
     "body": "“In these workshops, all the participants are expressing themselves, but they are expressing not only in words. A person expresses most, when he feels no one is expecting anything from him.”",
     "writer": "Stephanie Sotiry, trainer and artist, Lebanon",
 		"item": [
-			{ "title": "Number of trained artists", "body": "41%" }
+			{ "title": "Number of trained artists", "body": "41" }
     ]
   },
   "chapterThree": {
     "heading": "The words of Ghinwa, from Aleppo, Syria."
   },
 	"mediaThree": {
-		"img": "4.png"
+		"img": "4.png",
+		"text": "Ghinwa Alotibi in her hometown"
   },
   "textThree": {
     "body": "Ghinwa Alotibi is one of the artists who did Clowns Without Borders training in Lebanon in 2019 within the Creative Arts for Peace and Equality project. Since then she has been a big part of the work in Syria, contributing to making the project spread to other regions in Syria and inspiring many girls and women to participate in the workshops. This is her words: <br/><br/> “The situation in Syria is very sad. We face new tragedies every day. It’s not even about a country anymore, it’s about us trying to survive. <br/><br/> My name is Ghinwa and I come from the Northern part of Syria. I call it the sad North as it suffers not only from open clashes and displacements, but also of exhaustion and depression. I used to see the North as an example of prosperity and pluralism, rich with natural resources and diversified with ethnicities and nationalities. Here Kurds, Assyrians, Armenians, Arabs, Chaldeans, Turks, you name it, all lived in harmony together. But this great human wealth has now turned into a curse. Fear and hate are dominating people. Politics has succeeded:  a whole society that once was happy is destroyed. <br/><br/> Women in Syria used to have high social status. They were ambitious co-workers, mothers, sisters, friends, daughters. Today, a woman in Syria is a broken creature filled with sadness and fear. Fear of death, fear of loss, fear of being used and harassed. Lots of efforts are needed to bring back humanity, life and dignity to Syrian women. <br/><br/> After my participation in Clowns Without Borders training, I carried my new filled luggage and headed back home to the Sad North. The luggage was filled with laughter, positive energy and humanity. This I directly started to share with my fellow women. During weeks I gathered and trained a group of women in the methods I had been taught. Often, we met in secret in each other’s living rooms since public gatherings are forbidden in Syria. These women are now doing these training themselves. Today they work with women and girls who are exposed to child marriages, depression, violence, fear and social constraints. For the first time they are openly sharing their horrible experiences and the fact that we are so many carrying the same experiences makes me hold on to my luggage even harder. I want to create smaller bags out of it and distribute this psychosocial first aid kit to every girl and woman. <br/><br/> It hurts to see a whole civilization, nation and humanity totally destroyed. Today my home lacks love, confidence and trust. All Syrian’s live in a constant crisis on all levels. But despite all this sadness, I still have hope. Hope of a better world. The luggage I carry keeps being filled with new laughter, positive energy and humanity for every new woman I meet. It’s what makes me survive.” "
@@ -78,7 +78,8 @@
 	"imageTextTwo": {
 		"heading": "Creative Arts",
 		"body": "The importance of the creative arts is the ability to express all of the feelings through it. <br/><br/> This is something that gives a feeling of freedom in general, and psychological freedom in particular; this leads to equality and gives the strength to do many things in life. This is the link between arts and using it, which help to achieve safety and equality.",
-		"img": "5.jpg"
+		"img": "5.jpg",
+		"text": "Arts and crafts workshop in Fara refugee camp, Palestine"
 	},
   "quoteTwo": {
     "body": "“Not only we desperately need workshops where we laugh and play,  but also we must adopt joy, laughter and playing as an important part of our lives.” <br/><br/> Workshop participant, Syria",
@@ -100,7 +101,8 @@
     "body": "Is used to offer a safe, non-verbal, creative way of expressing emotions, thoughts, reflections and experiences through arts and crafts. It includes painting, working with clay, making collages of newspaper clippings, or building own materials as musical instruments or clown nose/mask. "
 	},
 	"mediaSix": {
-		"img": "8.jpg"
+		"img": "8.jpg",
+		"text": "Arts and crafts workshop in Fara refugee camp, Palestine"
 	},
   "chapterFive": {
     "heading": "How culture and creativity can promote peace and equality"
@@ -108,14 +110,15 @@
   "statsTwo": {
     "body": "The Creative Arts for Peace and Equality program is based on four steps. The four steps can go into each other or run in parallel, but they all are part of reaching the end results. For each step, there are activities and exercises that aim to achieve the step’s goals. <br/><br/> Since both the artists leading the groups, and the participants, are unique and have different preferences, skills and needs, it’s important to leave creative and artistic freedom for facilitators to choose and adapt the exercises/methods.",
 		"list": [
-      { "title": "Step 1", "body": "Trust and community." },
-      { "title": "Step 2", "body": "Reflection." },
+      { "title": "Step 1", "body": "Trust and community" },
+      { "title": "Step 2", "body": "Reflection" },
       { "title": "Step 3", "body": "Share and see shared experiences" },
-      { "title": "Step 4", "body": "Raising awareness and commitment." }
+      { "title": "Step 4", "body": "Raising awareness and commitment" }
     ]
   },
 	"mediaSeven": {
-		"img": "9.jpg"
+		"img": "9.jpg",
+		"text": "Group photo from Askar refugee camp, Palestine"
 	},
   "textFour": {
 		"list": [
@@ -136,7 +139,7 @@
     ]
   },
   "chapterSix": {
-		"heading": "Meet the people"
+		"heading": "Meet our workshop leaders"
 	},
   "subChapterFive": {
     "heading": "Ghinwa Alotibi, Syria",
@@ -156,7 +159,8 @@
 		"body": "Tell us a little bit about yourself Rand! <br/><br/> – I am 28 years old, and I live and work in Jordan. I studied acting and directing and I love my field. I work with humanitarian organizations. I also work in children's theater and I love to do acting for children. I love to work with them with puppets, masks, and clowning. I have a methodology for what the child needs in order to express and discover himself or herself, which helps to strengthen their personality."
   },
 	"mediaEight": {
-		"img": "11.jpg"
+		"img": "11.jpg",
+		"text": "Rand Abu Doha"
 	},
   "quoteThree": {
     "body": "“I used to beat my younger brother a lot, and he did as well.  After the sessions I tried to find a common language between us. Now we play a lot together and we have fun. He Is telling me many more things than before.“ <br/><br/> Workshop participant, Jordan",
@@ -195,10 +199,11 @@
   "subChapterEight": {
     "heading": "Ranin Odeh, Palestina",
     "question": "Tell us a little bit about yourself and work!",
-		"body": "<br/>– I’m a theater actress, director, and trainer from Jenin. I studied finance and banking in university, and at the same time I studied theater because I love it. After I took the training in the Creative Arts for Peace and Equality project, I started to give workshops for youth and children in the West Bank. <br/><br/>In our society children have no right to play or to express themselves – the parents decide all the details. I helped the children get their childhoods back and unleash their imaginations through art, so they play, paint, and act. "
+		"body": "– I’m a theater actress, director, and trainer from Jenin. I studied finance and banking in university, and at the same time I studied theater because I love it. After I took the training in the Creative Arts for Peace and Equality project, I started to give workshops for youth and children in the West Bank. <br/><br/>In our society children have no right to play or to express themselves – the parents decide all the details. I helped the children get their childhoods back and unleash their imaginations through art, so they play, paint, and act. "
 	},
 	"mediaNine": {
-		"img": "15.png"
+		"img": "15.png",
+		"text": "Ranin Odeh during a workshop in Fara refugee camp"
 	},
   "textNine": {
 		"question": "What’s the biggest obstacles in your daily life?",
@@ -244,7 +249,8 @@
 	"imageTextFive": {
 		"question": "How has your participation in the Creative Arts for Peace and Equality project been?",
 		"body": "<br/> – My participation in the Creative Arts for Peace and Equality project was a very nice change in my life. It helped me to look at aspects of life in a positive way, and I met so many kinds of people – it was very motivating for me to meet people coming from Palestine. I learnt so many new tools through the project, such as art for equality, clowning, and multimedia. In Syria, we are taught that people have to be serious in life and we have to be grouchy people. In Creative Arts for Peace and Equality I realized that so many problems could be solved by a laugh and art tools, which was a chance for me to renew my energy.",
-		"img": "10.jpg"
+		"img": "10.jpg",
+		"text": "Workshop participants in Syria"
 	},
 	"textFourteen": {
 		"intro": "In the clown part of the training, we worked hard to find the funny side in me. I couldn’t do it and it was very hard – under the war the Syrian people lost a big part of both our humanity and instinct, so it is not easy for us to release our laughter. Arts are a beautiful tool for creating a new connection that we use to renew our energy. We need to bring people back to dreaming, completing a drawing, or making a simple musical instrument – it will be a nice opportunity for participants in such a project.<br/><br/>",
@@ -259,5 +265,32 @@
   "textShapeFive": {
 		"quote": "“We used to arrive in one mood, and leave in another.” <br/><br/>Patricia Matar, Workshop participant, Lebanon",
 		"body": "The Creative Arts for Peace and Equality project is founded by Folke Bernadotte Academy – Swedish agency for peace, security and development. <br/><br/> Clowns Without Borders’s Sweden has carried out the project together with our partners in the Middle East: Clown me in, The Palestinian Circus School, The Freedom Theater and Al-balad Theater. <br/><br/>More about Folke Bernadotte Academy <a href='https://fba.se/en/' target='_blank'>here.</a>"
+	},
+	"mediaTen": {
+		"video": "https://www.youtube.com/embed/luNoodEFvu0"
+	},
+	"mediaEleven": {
+		"img": ""
+	},
+	"mediaTwelve": {
+		"img": ""
+	},
+	"mediaThirteen": {
+		"video": "https://www.youtube.com/embed/VFRVE6vXb8c"
+	},
+	"mediaFourteen": {
+		"video": "https://www.youtube.com/embed/28e8TZs_g_g"
+	},
+	"mediaFifteen": {
+		"video": "https://www.youtube.com/embed/sPVZJ-ZCZGs"
+	},
+	"mediaSixteen": {
+		"video": "https://www.youtube.com/embed/v0v3jOlMzpM"
+	},
+	"mediaSeventeen": {
+		"video": "https://www.youtube.com/embed/xBMxhkxwhsQ"
+	},
+	"mediaEightteen": {
+		"video": "https://www.youtube.com/embed/28e8TZs_g_g"
 	}
 }

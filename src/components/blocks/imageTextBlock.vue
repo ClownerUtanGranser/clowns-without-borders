@@ -8,7 +8,8 @@
       </div>
     </div>
     <div class="imageText__right">
-      <img class="imageText__img" :src="imgSrc" />
+      <img :src="imgSrc" class="imageText__img" :class="{ 'imageText__img-margin': $props.copy.text }"/>
+      <p v-if="$props.copy.text" class="imageText__text" v-text="$props.copy.text" />
     </div>
   </div>
 </template>
@@ -61,6 +62,7 @@ export default {
 
   &__right {
     width: 100%;
+    position: relative;
 
     @include mq($from: tablet) {
       width: 50%;
@@ -74,6 +76,12 @@ export default {
     height: 100%;
     width: 100%;
 
+    @include mq($from: tablet) {
+      &-margin {
+        padding-bottom: 55px;
+      }
+    }
+
     &::after {
       content: '';
       display: block;
@@ -84,6 +92,21 @@ export default {
   &__textWrapper {
     @include mq($from: tablet) {
       max-width: 460px;
+    }
+  }
+
+  &__text {
+    bottom: 0px;
+    margin: 10px 10px 0 10px;
+    z-index: 10;
+    color: color(red);
+    @include body;
+
+    @include mq($from: tablet) {
+      position: absolute;
+      bottom: 12px;
+      left: 0px;
+      margin: 0;
     }
   }
 
