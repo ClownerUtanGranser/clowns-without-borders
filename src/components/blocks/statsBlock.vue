@@ -31,6 +31,9 @@
             <p
               class="stats__countryBody"
               v-text="item.body"
+              :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
             />
           </Graphic>
         </div>
@@ -54,6 +57,9 @@
             <p
               class="stats__countryBody"
               v-text="item.body"
+              :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
             />
           </Graphic>
         </div>
@@ -70,7 +76,8 @@ export default {
   name: 'Stats',
   props: {
     copy: Object,
-    italic: Boolean
+    italic: Boolean,
+    bigNumber: Boolean
   },
   components: {
     Graphic
@@ -163,13 +170,17 @@ export default {
     text-transform: uppercase;
     color: color(red);
     z-index: 2;
+    width: calc(100% + 15px);
+    color: color(red);
   }
 
   &__countryBody {
     margin-top: 24px;
-  }
+    color: black;
 
-  &__countryHeading {
+    &-big {
+      font-size: 50px;
+    }
   }
 
   &__statsHeading {

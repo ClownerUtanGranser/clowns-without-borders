@@ -13,7 +13,7 @@
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
     <MediaBlock :copy="copy.mediaTwo" />
-    <StatsBlock :copy="copy.statsOne" :italic="true" />
+    <StatsBlock :copy="copy.statsOne" :italic="true" :bigNumber="true"/>
     <ChapterBlock :copy="copy.chapterThree" />
     <MediaBlock :copy="copy.mediaThree" />
     <TextBlock :copy="copy.textThree" />
@@ -32,7 +32,7 @@
     <MediaBlock :copy="copy.mediaSeven" />
     <TextBlock :copy="copy.textFour" />
     <MediaBlock :copy="copy.mediaEightteen" />
-    <StatsBlock :copy="copy.statsThree" />
+    <StatsBlock :copy="copy.statsThree" :bigNumber="true" />
     <ChapterBlock :copy="copy.chapterSix" />
     <SubChapterBlock :copy="copy.subChapterFive" />
     <MediaBlock :copy="copy.mediaFifteen" />
