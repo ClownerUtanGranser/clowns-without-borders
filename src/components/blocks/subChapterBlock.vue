@@ -150,7 +150,7 @@ export default {
     padding: 32px 32px 0px 32px;
 
     @include mq($from: 900px) {
-      padding: 60px 0;
+      padding: 60px 0px 0px 0px;
     }
   }
 

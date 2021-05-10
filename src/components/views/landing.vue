@@ -9,7 +9,7 @@
     <MediaBlock :copy="copy.mediaOne" />
     <TextBlock :copy="copy.textOne" />
     <ChapterBlock :copy="copy.chapterTwo" />
-    <MediaBlock :copy="copy.mediaTen" />
+    <!-- <MediaBlock :copy="copy.mediaTen" /> -->
     <ImageTextBlock :copy="copy.imageTextOne" />
     <TextBlock :copy="copy.textTwo" />
     <MediaBlock :copy="copy.mediaTwo" />
