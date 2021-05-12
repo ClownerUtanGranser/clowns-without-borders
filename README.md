@@ -1,6 +1,6 @@
-<p align="center">
-  ## CLOWNS WITHOUT BORDERS
-  ##CREATIVE ARTS FOR PEACE AND EQUALITY
+<p align="center" style="font-weight: bold; font-size: 20px;">
+  CLOWNS WITHOUT BORDERS
+  CREATIVE ARTS FOR PEACE AND EQUALITY
 </p>
 
 -----
