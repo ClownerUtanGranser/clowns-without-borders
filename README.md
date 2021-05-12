@@ -1,7 +1,7 @@
-<p align="center" style="font-weight: bold; font-size: 20px;">
-  CLOWNS WITHOUT BORDERS
+<h1 align="center" style="font-weight: bold; font-size: 20px;">
+  CLOWNS WITHOUT BORDERS<br/>
   CREATIVE ARTS FOR PEACE AND EQUALITY
-</p>
+</h1>
 
 -----
 
