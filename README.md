@@ -3,8 +3,6 @@
   CREATIVE ARTS FOR PEACE AND EQUALITY
 </h1>
 
------
-
 #### Project setup
 ```
 yarn install
