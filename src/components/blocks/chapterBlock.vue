@@ -1,6 +1,6 @@
 <template>
   <kinesis-container event="scroll">
-    <div class="chapter">
+    <div v-bind:id="$props.copy.id" class="chapter">
       <div class="chapter__pinkCircle" />
       <kinesis-element
         :strength="yellowCircleSpeed"

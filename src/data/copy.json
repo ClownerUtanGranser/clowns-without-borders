@@ -12,6 +12,7 @@
 		"text": "Photographer: Joelle"
   },
   "chapterOne": {
+    "id":"chapter-1",
     "heading": "Being a girl in a man’s world"
   },
   "subChapterOne": {
@@ -26,6 +27,7 @@
     "body": "Women are generally expected to fulfill traditional female gender roles such as taking care of the household, getting married and having children. During war times, such as the one in Syria right now, women are also expected to take on  traditional masculine responsibilities, such as securing the family’s daily requirements, but still not with the same possibilities and rights as men have. So what is needed for girls and women to get access to their fundamental rights in a man’s world? <br/><br/> That is a question we at Clowns Without Borders Sweden have asked ourselves many times and is also one of the reasons we started the project Creative Arts for Peace and Equality, also called CAPE. It’s a project created to support girls and women who are affected by war and conflict, minority groups, groups in vulnerable economic situations, women and girls exposed to violence and harassment and people affected by the harbor explosions in Lebanon, by strengthening their psychosocial wellbeing – a way to find peace within while working for peace in the world. And how are we doing this? Well the first clue you can find in the project's name – we work for peace and equality by using creative arts. Keep on reading to find out more about our specific methods, way of work and to hear more from the girls and women participating in the project."
   },
   "chapterTwo": {
+    "id":"chapter-2",
     "heading": "A strong network is a start – and the future"
   },
 	"mediaX": {
@@ -63,6 +65,7 @@
     ]
   },
   "chapterThree": {
+    "id":"chapter-3",
     "heading": "The words of Ghinwa, from Aleppo, Syria."
   },
 	"mediaThree": {
@@ -73,6 +76,7 @@
     "body": "Ghinwa Alotibi is one of the artists who did Clowns Without Borders training in Lebanon in 2019 within the Creative Arts for Peace and Equality project. Since then she has been a big part of the work in Syria, contributing to making the project spread to other regions in Syria and inspiring many girls and women to participate in the workshops. These are her words: <br/><br/> “The situation in Syria is very sad. We face new tragedies every day. It’s not even about a country anymore, it’s about us trying to survive. <br/><br/> My name is Ghinwa and I come from the Northern part of Syria. I call it the sad North as it suffers not only from open clashes and displacements, but also of exhaustion and depression. I used to see the North as an example of prosperity and pluralism, rich with natural resources and diversified with ethnicities and nationalities. Here Kurds, Assyrians, Armenians, Arabs, Chaldeans, Turks, you name it, all lived in harmony together. But this great human wealth has now turned into a curse. Fear and hate are dominating people. This politics has exceeded a whole society that once was happy is destroyed. <br/><br/> Women in Syria used to have high social status. They were ambitious co-workers, mothers, sisters, friends, daughters. Today, a woman in Syria is a broken creature filled with sadness and fear. Fear of death, fear of loss, fear of being used and harassed. Lots of efforts are needed to bring back humanity, life and dignity to Syrian women. <br/><br/> After my participation in Clowns Without Borders training, I carried my new filled luggage and headed back home to the Sad North. The luggage was filled with laughter, positive energy and humanity. This I directly started to share with my fellow women. During weeks I gathered and trained a group of women in the methods I had been taught. Often, we met in secret in each other’s living rooms since public gatherings are forbidden in Syria. These women are now doing these training themselves. Today they work with women and girls who are exposed to child marriages, depression, violence, fear and social constraints. For the first time they are openly sharing their horrible experiences and the fact that we are so many carrying the same experiences makes me hold on to my luggage even harder. I want to create smaller bags out of it and distribute this psychosocial first aid kit to every girl and woman. <br/><br/> It hurts to see a whole civilization, nation and humanity totally destroyed. Today my home lacks love, confidence and trust. All Syrian’s live in a constant crisis on all levels. But despite all this sadness, I still have hope. Hope of a better world. The luggage I carry keeps being filled with new laughter, positive energy and humanity, for every new woman I meet. It’s what makes me survive.” "
   },
   "chapterFour": {
+    "id":"chapter-4",
     "heading": "The Clowns Without Borders methodology"
   },
 	"imageTextTwo": {
@@ -105,6 +109,7 @@
 		"text": "Arts and crafts workshop in Fara refugee camp, Palestine"
 	},
   "chapterFive": {
+    "id":"chapter-5",
     "heading": "How culture and creativity can promote peace and equality"
   },
   "statsTwo": {
@@ -139,6 +144,7 @@
     ]
   },
   "chapterSix": {
+    "id":"chapter-6",
 		"heading": "Meet our workshop leaders"
 	},
   "subChapterFive": {
@@ -170,9 +176,7 @@
 		"heading": "And how is the current situation in Jordan?",
     "body": "– The situation in Jordan is total silence – people lack freedom of expression. No one feels able to complain about the political or the economic situations. People live under the minimum conditions of human rights. Hardly anyone in Jordan works in their own field. Everyone depends on their own connections and networks. It is very hard to develop an artistic project. The general situation in Jordan is very hard and it’s getting harder, especially for women, because we are living in a patriarchal society. When I was a university student, in the theater department, I was the top maker in my group, but they unfortunately gave the theater’s scholarship to a male student in my group instead."
   },
-	"imageTextThree": {
-
-	},
+  
   "textShapeTwo": {
 		"question": "How have you worked with girls and women after the training?<br/><br/>",
     "body": "– The training promoted the concept of meditation, listening, and enjoyment in my mind. I started to have a sense of responsibility towards the women I trained in the project's workshops in Jordan. I feel happy when the women trust and consult me about their problems in their private life. With the help of the project, I discovered the safe places inside me. It is very important for every one of us in this world to discover the safe place inside ourselves – for me it was an open natural place as the sea and desert, or just to look to the sky and drink a cup of tea.",
@@ -238,6 +242,7 @@
 		"img": "18.jpg"
 	},
   "chapterSeven": {
+    "id":"chapter-7",
 		"heading": "Final words"
 	},
   "textShapeFour": {
@@ -265,7 +270,7 @@
 	},
   "textShapeFive": {
 		"quote": "“We used to arrive in one mood, and leave in another.” <br/><br/>Patricia Matar, Workshop participant, Lebanon",
-		"body": "The Creative Arts for Peace and Equality project is founded by Folke Bernadotte Academy – Swedish agency for peace, security and development. <br/><br/> Clowns Without Borders’s Sweden has carried out the project together with our partners in the Middle East: Clown Me In, The Palestinian Circus School, The Freedom Theater and Al-balad Theater. <br/><br/>More about the Folke Bernadotte Academy <a href='https://fba.se/en/' target='_blank'>here.</a>"
+		"body": "The Creative Arts for Peace and Equality project is financed by Folke Bernadotte Academy – Swedish agency for peace, security and development. <br/><br/> Clowns Without Borders’s Sweden has carried out the project together with our partners in the Middle East: Clown Me In, The Palestinian Circus School, The Freedom Theater and Al-balad Theater. <br/><br/>More about the Folke Bernadotte Academy <a href='https://fba.se/en/' target='_blank'>here.</a>"
 	},
 	"mediaTen": {
 		"video": "https://www.youtube.com/embed/luNoodEFvu0"

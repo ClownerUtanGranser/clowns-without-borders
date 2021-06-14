@@ -7,13 +7,13 @@
 @font-face {
   font-family: "DM Sans italic";
   src: local("DM Sans italic"),
-   url('~@/assets/fonts/DMSans-RegularItalic.ttf') format("truetype");
+   url('~@/assets/fonts/dmsans-regularitalic.ttf') format("truetype");
 }
 
 @font-face {
   font-family: "Marguerite Grotesk";
   src: local("Marguerite Grotesk"),
-   url('~@/assets/fonts/MargueriteGrotesk-Regular.otf') format("opentype");
+   url('~@/assets/fonts/margueritegrotesk-regular.otf') format("opentype");
 }
 
 @mixin body {
