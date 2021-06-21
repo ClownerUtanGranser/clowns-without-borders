@@ -1,5 +1,6 @@
 <template>
   <div class="landing">
+    <navigation :copy="copy" />
     <HeroBlock :copy="copy.hero" />
     <CountryBlock :copy="copy.introduction" />
     <MediaBlock :copy="copy.mediaEleven" />
@@ -73,6 +74,7 @@
 <script>
 import copy from '../../data/copy.json'
 
+import navigation from '@/components/blocks/navigation'
 import HeroBlock from '@/components/blocks/heroBlock'
 import CountryBlock from '@/components/blocks/countryBlock'
 import MediaBlock from '@/components/blocks/mediaBlock'
@@ -88,6 +90,8 @@ import Footer from '@/components/ui/footer'
 export default {
   name: 'Landing',
   components: {
+
+    navigation,
     HeroBlock,
     CountryBlock,
     MediaBlock,

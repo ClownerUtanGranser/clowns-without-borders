@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div v-bind:id="$props.copy.id" class="hero">
     <img class="hero__logo" src="@/assets/images/logo.svg" alt="Clowns logo" />
     <div class="hero__wrapper">
       <h1 class="hero__heading" v-text="$props.copy.heading" />
