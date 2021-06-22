@@ -76,6 +76,7 @@ export default {
         background: white;
         border-radius: 5px;
         margin-top: 5px;
+        border: solid #777 1px;
 
         transition: transform 1s , opacity 1s;
 
