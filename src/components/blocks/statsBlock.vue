@@ -31,7 +31,7 @@
             <p
               class="stats__countryBody"
               v-text="$props.bigNumber? '' : item.body"
-              :class="[$props.bigNumber ? 'num-'+ item.body + ' stats__countryBody-big' : '']"
+              :class="[counting41($props.bigNumber)  ? 'num-'+ item.body + ' stats__countryBody-big' : '']"
             />
             <!--
               :class="{
@@ -59,12 +59,15 @@
               v-text="item.title"
             />
             <p
-              class="stats__countryBody num-41"
+              class="stats__countryBody"
               v-text="$props.bigNumber? '' : item.body"
-              :class="{
-                'stats__countryBody-big': $props.bigNumber,
-              }"
+              :class="[counting41($props.bigNumber)  ? 'num-'+ item.body + ' stats__countryBody-big' : '']"  
             />
+            <!--
+              :class="{
+                        'stats__countryBody-big': $props.bigNumber,
+                      }"
+              -->
           </Graphic>
         </div>
       </div>
@@ -85,6 +88,39 @@ export default {
   },
   components: {
     Graphic
+  },
+  data() {
+    return {
+      observer1: null,
+     // observer2: null,
+      intersect41: false,
+      intersect2500:false
+    };
+  },
+  mounted(){
+
+    this.observer1 = new IntersectionObserver(([entry]) => {
+      if(entry && entry.isIntersecting)
+      {
+        this.intersect41 = true
+      }
+      else
+      {
+        this.intersect41 = false
+      }
+    },{
+          root: document.querySelector('.num-41'),
+          rootMargin: '-15%',
+          threshold: 0
+        })
+    
+    this.observer1.observe(this.$el);
+  },
+  methods: {
+    counting41: function (isNumber) 
+    {
+      return isNumber && this.intersect41;
+    }
   }
 }
 </script>
