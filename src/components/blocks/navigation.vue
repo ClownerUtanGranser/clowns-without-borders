@@ -137,6 +137,68 @@ export default {
   }
 }
 
+@media screen and (max-width: 1024px) {
+
+.overlay
+{
+  justify-content:center;
+  align-items: start;
+    ul
+    {
+      margin: 4rem 0rem 0rem 4rem;
+    }
+    .nav-li {
+      
+      width: 80%;
+      font-size: 2rem;
+      font-weight: 2rem;
+      margin: 0rem 0.5rem 0.5rem 0.5rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) 
+{
+  .overlay
+  {
+     
+    .nav-li 
+    {
+      
+      width: 80%;
+      font-size: 1.2rem;
+      font-weight: 1.2rem;
+      margin: 0rem 0.5rem 0.5rem 0.5rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) 
+{
+  .overlay
+  {
+
+    ul
+    {
+      margin: 2rem 0rem 0rem 4rem;
+    }
+     
+    .nav-li 
+    {
+      
+      width: 80%;
+      font-size: 1rem;
+      font-weight: 1.2rem;
+      margin: 0rem 0.5rem 0.5rem 0rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  }
+}
+
+
+
 @keyframes fadein 
 {
   from { opacity: 0}
