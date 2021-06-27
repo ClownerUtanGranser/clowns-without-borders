@@ -92,7 +92,6 @@ export default {
   data() {
     return {
       observer1: null,
-     // observer2: null,
       intersect41: false,
       intersect2500:false
     };
