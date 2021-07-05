@@ -10,7 +10,9 @@
         :strength="greenCircleSpeed"
         class="chapter__greenCircle"
       />
-      <div class="chapter__wrapper">
+      <div class="chapter__wrapper"
+        :class=" [ intersectCapter ? 'fadeIn' : '']"
+      >
         <h1
           v-if="$props.copy.heading"
           class="chapter__heading"
@@ -31,6 +33,31 @@ export default {
   props: {
     copy: Object,
     smallerText: Boolean
+  },
+  data() {
+    return {
+      observer1: null,
+      intersectCapter: false
+    };
+  },
+   mounted(){
+
+    this.observer1 = new IntersectionObserver(([entry]) => {
+      if(entry && entry.isIntersecting)
+      {
+        this.intersectCapter = true
+      }
+      else
+      {
+        this.intersectCapter = false
+      }
+    },{
+          root: document.querySelector(this.$props.copy.id),
+          rootMargin: '-15%',
+          threshold: 0
+        })
+    
+    this.observer1.observe(this.$el);
   },
   computed: {
     yellowCircleSpeed: function () {
@@ -77,6 +104,11 @@ export default {
     &-longer {
       width: auto;
       margin-right: 40px;
+    }
+
+    &.fadeIn
+    {
+      animation: fadeIn 5s;
     }
 
     @include mq($from: tablet) {
@@ -170,5 +202,10 @@ export default {
       }
     }
   }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 </style>
