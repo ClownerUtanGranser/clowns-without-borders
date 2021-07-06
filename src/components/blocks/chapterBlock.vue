@@ -36,13 +36,13 @@ export default {
   },
   data() {
     return {
-      observer1: null,
+      observer2: null,
       intersectCapter: false
     };
   },
    mounted(){
 
-    this.observer1 = new IntersectionObserver(([entry]) => {
+    this.observer2 = new IntersectionObserver(([entry]) => {
       if(entry && entry.isIntersecting)
       {
         this.intersectCapter = true
@@ -57,7 +57,7 @@ export default {
           threshold: 0
         })
     
-    this.observer1.observe(this.$el);
+    this.observer2.observe(this.$el);
   },
   computed: {
     yellowCircleSpeed: function () {
