@@ -30,9 +30,24 @@
             />
             <p
               class="stats__countryBody"
-              v-text="$props.bigNumber? '' : item.body"
-              :class="[counting41($props.bigNumber)  ? 'num-'+ item.body + ' stats__countryBody-big' : '']"
+              v-if="!$props.bigNumber"
+              v-text="item.body"
+              :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
             />
+            <p class="stats__countryBody"
+               v-if="$props.bigNumber && item.body == 2500"
+               :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
+            >{{ count2500 }}</p>
+            <p class="stats__countryBody"
+               v-if="$props.bigNumber && item.body == 173"
+               :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
+            >{{ count173 }}</p>
             <!--
               :class="{
                               'stats__countryBody-big' '': $props.bigNumber,
@@ -60,10 +75,19 @@
             />
             <p
               class="stats__countryBody"
-              v-text="$props.bigNumber? '' : item.body"
-              :class="[counting41($props.bigNumber)  ? 'num-'+ item.body + ' stats__countryBody-big' : '']"  
-            />
-            <!--
+              v-if="!$props.bigNumber"
+              v-text="item.body"
+              :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
+            />  
+            <p class="stats__countryBody"
+               :class="{
+                'stats__countryBody-big': $props.bigNumber,
+              }"
+            >{{ count41 }}</p> 
+            
+                      <!--
               :class="{
                         'stats__countryBody-big': $props.bigNumber,
                       }"
@@ -91,6 +115,9 @@ export default {
   },
   data() {
     return {
+      count41: 0,
+      count173: 0,
+      count2500: 0,
       observer1: null,
       intersect41: false,
       intersect2500:false
@@ -102,10 +129,16 @@ export default {
       if(entry && entry.isIntersecting)
       {
         this.intersect41 = true
+        this.countTo41()
+        this.countTo173()
+        this.countTo2500()
       }
       else
       {
         this.intersect41 = false
+        this.count41 = 0;
+        this.count173 = 0;
+        this.count2500 = 0;
       }
     },{
           root: document.querySelector('.num-41'),
@@ -116,11 +149,56 @@ export default {
     this.observer1.observe(this.$el);
   },
   methods: {
+    countTo41() {
+                        if(this.count41< 41) {
+                            setTimeout(() => {
+                                this.count41+= 1
+                                this.countTo41()
+                            }, 70);
+                        }
+                        else if(this.count41> 41)
+                        {
+                          this.count41 = 41
+                        }
+
+                    },
+    countTo173()
+    {
+                        if(this.count173< 173) {
+                            setTimeout(() => {
+                              this.count173 += 1
+                              this.countTo173()
+                            }, 20);
+                        }
+                        else if(this.count173 > 173)
+                        {
+                          this.count173 = 173
+                        }
+    },
+    countTo2500()
+    {
+      if(this.count2500< 2500) 
+      {
+        setTimeout(() => {
+                            this.count2500 += 4
+                            this.countTo2500()
+                          }, 1);
+      }
+      else if(this.count2500 > 2500)
+      {
+        this.count2500 = 2500
+      }
+
+    },
     counting41: function (isNumber) 
     {
       return isNumber && this.intersect41;
     }
   }
+  // ,
+  // created() {
+  //           this.countSeconds();
+  //       }
 }
 </script>
 
@@ -292,62 +370,62 @@ export default {
 
 //--TEST--//
 
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
+// @property --num {
+//   syntax: "<integer>";
+//   initial-value: 0;
+//   inherits: false;
+// }
 
-.num-41 {
-  animation: counter41 5s 1 normal forwards ease-in-out;
-  counter-reset: num var(--num);
-  &:after {
-    content: counter(num);
-  }
-}
+// .num-41 {
+//   animation: counter41 5s 1 normal forwards ease-in-out;
+//   counter-reset: num var(--num);
+//   &:after {
+//     content: counter(num);
+//   }
+// }
 
-.num-173 {
-  animation: counter173 5s 1 normal forwards ease-in-out;
-  counter-reset: num var(--num);
-  &:after {
-    content: counter(num);
-  }
-}
+// .num-173 {
+//   animation: counter173 5s 1 normal forwards ease-in-out;
+//   counter-reset: num var(--num);
+//   &:after {
+//     content: counter(num);
+//   }
+// }
 
-.num-2500 {
-  animation: counter2500 5s 1 normal forwards ease-in-out;
-  counter-reset: num var(--num);
-  &:after {
-    content: counter(num);
-  }
-}
+// .num-2500 {
+//   animation: counter2500 5s 1 normal forwards ease-in-out;
+//   counter-reset: num var(--num);
+//   &:after {
+//     content: counter(num);
+//   }
+// }
  
 
-@keyframes counter41 {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 41;
-  }
-}
+// @keyframes counter41 {
+//   from {
+//     --num: 0;
+//   }
+//   to {
+//     --num: 41;
+//   }
+// }
 
-@keyframes counter173 {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 173;
-  }
-}
+// @keyframes counter173 {
+//   from {
+//     --num: 0;
+//   }
+//   to {
+//     --num: 173;
+//   }
+// }
 
-@keyframes counter2500 {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 2500;
-  }
-}
+// @keyframes counter2500 {
+//   from {
+//     --num: 0;
+//   }
+//   to {
+//     --num: 2500;
+//   }
+// }
 
 </style>
