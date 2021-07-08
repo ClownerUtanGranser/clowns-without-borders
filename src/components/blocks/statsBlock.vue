@@ -182,7 +182,7 @@ export default {
         setTimeout(() => {
                             this.count2500 += 4
                             this.countTo2500()
-                          }, 1);
+                          }, 2);
       }
       else if(this.count2500 > 2500)
       {
@@ -195,10 +195,6 @@ export default {
       return isNumber && this.intersect41;
     }
   }
-  // ,
-  // created() {
-  //           this.countSeconds();
-  //       }
 }
 </script>
 
@@ -221,6 +217,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     padding: 32px;
+    
 
     @include mq($from: tablet) {
       width: 50vw;
@@ -367,65 +364,5 @@ export default {
     display: inherit;
   }
 }
-
-//--TEST--//
-
-// @property --num {
-//   syntax: "<integer>";
-//   initial-value: 0;
-//   inherits: false;
-// }
-
-// .num-41 {
-//   animation: counter41 5s 1 normal forwards ease-in-out;
-//   counter-reset: num var(--num);
-//   &:after {
-//     content: counter(num);
-//   }
-// }
-
-// .num-173 {
-//   animation: counter173 5s 1 normal forwards ease-in-out;
-//   counter-reset: num var(--num);
-//   &:after {
-//     content: counter(num);
-//   }
-// }
-
-// .num-2500 {
-//   animation: counter2500 5s 1 normal forwards ease-in-out;
-//   counter-reset: num var(--num);
-//   &:after {
-//     content: counter(num);
-//   }
-// }
- 
-
-// @keyframes counter41 {
-//   from {
-//     --num: 0;
-//   }
-//   to {
-//     --num: 41;
-//   }
-// }
-
-// @keyframes counter173 {
-//   from {
-//     --num: 0;
-//   }
-//   to {
-//     --num: 173;
-//   }
-// }
-
-// @keyframes counter2500 {
-//   from {
-//     --num: 0;
-//   }
-//   to {
-//     --num: 2500;
-//   }
-// }
 
 </style>
