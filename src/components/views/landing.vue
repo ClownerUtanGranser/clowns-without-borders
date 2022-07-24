@@ -2,6 +2,7 @@
   <div class="landing">
     <navigation :copy="copy" />
     <HeroBlock :copy="copy.hero" />
+    <MediaBlock :copy="copy.mediaFirstPage" />
     <CountryBlock :copy="copy.introduction" />
     <MediaBlock :copy="copy.mediaEleven" />
     <ChapterBlock :copy="copy.chapterOne" />
